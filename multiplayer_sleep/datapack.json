@@ -5,13 +5,13 @@
   "title":"Multiplayer % Sleeping System",
   "logo":"/icon.png",
   "video":"https://www.youtube.com/watch?v=0jkaA1FfszI",
-  "url": "http://plagiatus.net/datapacks/multiplayer_sleep/",
+  "url": "https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/",
   "banner": "/banner.png",
   "creator": "Plagiatus",
-  "creatorLink": "plagiatus.net",
+  "creatorLink": "http://plagiatus.net",
   "website": "http://plagiatus.net/portfolio/multiplayer-sleeping-system/",
   "files": {
-    "2.0.0": "/v2.0.0.zip"
+    "2.0.0": "/multiplayer_sleepv2.0.0.zip"
   },
   "description":"/description.md"
 }
