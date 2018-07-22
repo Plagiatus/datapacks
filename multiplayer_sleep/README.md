@@ -1,3 +1,5 @@
+![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png "Multiplayer Sleeping System")
+
 # Multiplayer Percentage Sleeping System
 
 [latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.0.zip) (1.13)
