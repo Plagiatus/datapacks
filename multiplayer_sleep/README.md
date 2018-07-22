@@ -1,5 +1,8 @@
 # Multiplayer Percentage Sleeping System
 
+[latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.0.zip) (1.13)
+
+
 ## What it does
 
 This Datapack is intended for larger survival servers. It allows the OPs of the server to set a percentage of players required to sleep to skip the night.

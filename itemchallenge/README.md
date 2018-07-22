@@ -1,6 +1,8 @@
 # Itemchallenge
 ### collect every item in the game
 
+[latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v2.0.0.zip) (1.13)
+
 ## How to play
 
 The premise is easy: Find every item in the game and return it to the shrine.  
