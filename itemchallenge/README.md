@@ -15,7 +15,7 @@ It will also protect itself against creeper explosions.
 
 ## How to set up
 
-After the datapack has been added to your world and activated, you need to find a good place for the shrine to be placed.
+Download the zip file and place it into your `world/datapacks` folder. If the world is already running, run `reload`. That's all you need to do. Now you need to find a good place for the shrine to be placed.
 if you think you've found that place, stand there and run
 
     function itemchallenge:spawn_shrine

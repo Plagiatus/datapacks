@@ -9,7 +9,8 @@ When a player is trying to pass the night, a message in chat with how many playe
 
 ## How to set up
 
-After the datapack has been added to your world and activated, it has been set to **10% as a standard**. To change that, use the following command in chat (replace XX with your desired percentage):
+Download the zip file and place it into your `world/datapacks` folder. If the world is already running, run `reload`. That's all you need to do.  
+That way it has been set to **10% as a standard**. To change that, use the following command in chat (replace XX with your desired percentage):
 
     scoreboard players set requiredPercent multSleep.count XX
 
