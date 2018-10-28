@@ -1,9 +1,9 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/headdrop/banner.png "Itemchallenge")
+![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/headdrops/banner.png "Itemchallenge")
 
 # Headdrops
 ### make players drop their skull
 
-[latest version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrop/headdrop_v1.0.0.zip) (1.13)
+[latest version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/headdrops_v1.0.0.zip) (1.13)
 
 ## What it does
 
