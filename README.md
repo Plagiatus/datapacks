@@ -10,7 +10,7 @@ Click on the folder for the pack you want, download the latest version zipfile a
 ### [Multiplayer Percentage Sleeping System](https://github.com/Plagiatus/datapacks/tree/master/multiplayer_sleep)  
 Set a percentage of players required to sleep. That way not everyone on the server has to be in a bed to pass the night.
 
-### [Headdrops] (https://github.com/Plagiatus/datapacks/tree/master/headdrops)
+### [Headdrops](https://github.com/Plagiatus/datapacks/tree/master/headdrops)
 Make players drop their own head when killed by another player
 
 ## Games
