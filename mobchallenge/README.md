@@ -4,7 +4,7 @@
 ### kill every mob in the game
 
 [latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/mobchallenge/mobchallenge_perworld_v1.0.zip) (1.13.1)  
-[minecraft 1.14 version, tested in 18w14a (v2.0)](https://github.com/Plagiatus/datapacks/raw/master/mobchallenge/mobchallenge_perworld_v2.0.0.zip) (1.14) _this one has a bunch of changed mechanics that alter the game in itself, for all the details check out [Xisumavoid's Video](https://www.youtube.com/watch?v=V1IfjWjNQSA) about them._
+[minecraft 1.14 version, tested in 18w45a (v2.0)](https://github.com/Plagiatus/datapacks/raw/master/mobchallenge/mobchallenge_perworld_v2.0.0.zip) (1.14) _this one has a bunch of changed mechanics that alter the game in itself, for all the details check out [Xisumavoid's Video](https://www.youtube.com/watch?v=V1IfjWjNQSA) about them._
 
 
 ## How to play
