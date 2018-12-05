@@ -17,3 +17,6 @@ Make players drop their own head when killed by another player
 
 ### [Itemchallenge](https://github.com/Plagiatus/datapacks/tree/master/itemchallenge)  
 Collect every item in the game and bring it to a shrine. As seen in Hardcore Hermits S2.
+
+### [Mobchallenge](https://github.com/Plagiatus/datapacks/tree/master/mobchallenge)
+Find and kill every mob in the game. As seen in Hardcore Hermits S3.
