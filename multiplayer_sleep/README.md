@@ -2,7 +2,7 @@
 
 # Multiplayer Percentage Sleeping System
 
-[latest version (v2.0.1)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.1.zip) (1.13)
+[latest version (v2.0.2)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip) (1.13)
 
 
 ## What it does
@@ -27,7 +27,7 @@ This datapack will...
 
 * ...always require a minimum of 1 player to sleep.  
 * ...round down the required players. So if the percentage is set to 50% and 3 players are online, 1.5 players need to sleep, which the pack rounds down to one.  
-* ...clear the weather whenever the night is skipped.  
+* ...clear the weather whenever the night is skipped for 999999 seconds. If you'd rather have the "normal" behaviour of it turning to sun for a limited but random amount of time, you can swap out the `skip.mcfunction` file for [this one](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/skip.mcfunction)  
 * ...not interfere with the phantom timer. If you are in a bed, the timer resets, as always.  
 * ...only consider players in the overworld when counting how many players need to sleep.
 * ...add to the time instead of setting it, so you won't loose your time played/ingame days
@@ -35,3 +35,18 @@ This datapack will...
 ### Contact
 
 If you have any questions, concerns, praise or found a bug, you can contact me directly at [contact@plagiatus.net](mailto:contact@plagiatus.net) or use my [contact form](http://plagiatus.net/#contact).
+
+
+### Changelog
+
+#### 2.0.2
+
+11.01.2019 made the pack more reliable on laggier servers. Prevented a double night skip from happening.
+
+#### 2.0.1
+
+11.08.2018 fixed a small bug that would sometimes cause the toast notifications not to show up as well as not skip the night in specific circumstances.
+
+#### 2.0
+
+updated to mc 1.13

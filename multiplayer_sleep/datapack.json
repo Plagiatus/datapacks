@@ -1,7 +1,7 @@
 {
   "id":"net.plagiatus.multiplayersleep",
   "type":"datapack",
-  "version":"2.0.1",
+  "version":"2.0.2",
   "title":"Multiplayer % Sleeping System",
   "logo":"/icon.png",
   "video":"https://www.youtube.com/watch?v=0jkaA1FfszI",
@@ -11,6 +11,7 @@
   "creatorLink": "http://plagiatus.net",
   "website": "http://plagiatus.net/portfolio/multiplayer-sleeping-system/",
   "files": {
+    "2.0.2": "/multiplayer_sleepv2.0.2.zip",
     "2.0.1": "/multiplayer_sleepv2.0.1.zip",
     "2.0.0": "/multiplayer_sleepv2.0.0.zip"
   },

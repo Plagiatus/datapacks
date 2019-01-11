@@ -29,3 +29,17 @@ This datapack will...
 ### Contact
 
 If you have any questions, concerns, praise or found a bug, you can contact me directly at [contact@plagiatus.net](mailto:contact@plagiatus.net) or use my [contact form](http://plagiatus.net/#contact).
+
+### Changelog
+
+#### 2.0.2
+
+made the pack more reliable on laggier servers. Prevented a double night skip from happening.
+
+#### 2.0.1
+
+fixed a small bug that would sometimes cause the toast notifications not to show up as well as not skip the night in specific circumstances.
+
+#### 2.0
+
+updated to mc 1.13
