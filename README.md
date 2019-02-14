@@ -13,6 +13,9 @@ Set a percentage of players required to sleep. That way not everyone on the serv
 ### [Headdrops](https://github.com/Plagiatus/datapacks/tree/master/headdrops)
 Make players drop their own head when killed by another player
 
+### [Timer](https://github.com/Plagiatus/datapacks/tree/master/timer)
+Allows players to have individual counters in the world.
+
 ## Games
 
 ### [Itemchallenge](https://github.com/Plagiatus/datapacks/tree/master/itemchallenge)  
