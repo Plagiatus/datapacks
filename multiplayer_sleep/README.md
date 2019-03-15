@@ -2,7 +2,8 @@
 
 # Multiplayer Percentage Sleeping System
 
-[latest version (v2.0.2)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip) (1.13)
+[latest version (v2.0.2)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip) (1.13)   
+[1.12 version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv1.0.0.zip)
 
 
 ## What it does
