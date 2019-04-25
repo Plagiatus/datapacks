@@ -41,6 +41,10 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 ### Changelog
 
+#### 2.1.0
+
+19.06.2019 Update to mc 1.14
+
 #### 2.0.2
 
 11.01.2019 made the pack more reliable on laggier servers. Prevented a double night skip from happening.
