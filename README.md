@@ -10,6 +10,9 @@ Click on the folder for the pack you want, download the latest version zipfile a
 ### [Multiplayer Percentage Sleeping System](https://github.com/Plagiatus/datapacks/tree/master/multiplayer_sleep)  
 Set a percentage of players required to sleep. That way not everyone on the server has to be in a bed to pass the night.
 
+### [Homes](https://github.com/Plagiatus/datapacks/tree/master/homes)  
+Set unlimited homes in your world that you can teleport to and rename. No OP required, Multiplayer friendly.
+
 ### [Headdrops](https://github.com/Plagiatus/datapacks/tree/master/headdrops)
 Make players drop their own head when killed by another player
 
