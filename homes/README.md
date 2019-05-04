@@ -10,6 +10,8 @@ Homes allow you to save positions in the world and teleport to them whenever you
 
 This Datapack allows you to set unlimited homes in any world. The players of the world don't need OP to use the commands.
 
+**This only works in the overworld. Multi-dimensional support is planned.**
+
 ## How to set up
 
 Download the zip file and place it into your `world/datapacks` folder. If the world is already running, run `reload`. That's all you need to do.  
