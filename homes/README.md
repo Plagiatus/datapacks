@@ -2,15 +2,13 @@
 
 # Homes
 
-[latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/home/homes_v1.0.zip) (1.14)
+[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/home/homes_v1.1.zip) (1.14)
 
 ## What it does
 
-Homes allow you to save positions in the world and teleport to them whenever you want.
+Homes allow you to save positions in the world and teleport to them whenever you want, including different dimensions.
 
 This Datapack allows you to set unlimited homes in any world. The players of the world don't need OP to use the commands.
-
-**This only works in the overworld. Multi-dimensional support is planned.**
 
 ## How to set up
 
@@ -65,3 +63,12 @@ Homes are running out ~3 years (real time) after you've created them. If this is
 ### Contact
 
 If you have any questions, concerns, praise or found a bug, you can contact me directly at [contact@plagiatus.net](mailto:contact@plagiatus.net) or use my [contact form](http://plagiatus.net/#contact).
+
+
+### Changelog
+
+#### 1.1
+5.4.2019 Multidimensional Support
+
+#### 1.0
+4.5.2019 released
