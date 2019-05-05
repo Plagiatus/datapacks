@@ -52,13 +52,14 @@ Sets the name of the specified home to the name of the item in your hand. **The 
 
 ## Further Information
 
-**If you want to move your spawnchunks, you'll have to run this command afterwards to keep the datapack working:**
+- **If you want to move your spawnchunks, you'll have to run this command afterwards to keep the datapack working:**
 
-    teleport @e[type=area_effect_cloud,tag=pla_home] x y z  
+      teleport @e[type=area_effect_cloud,tag=pla_home] x y z
 	
 replace `x y z` with your new worldspawn coordinates.
 
-Homes are running out ~3 years (real time) after you've created them. If this is a concern for you, reach out to me and I'll let you know how to extend it by another 3 years.
+- Homes are running out ~3 years (real time) after you've created them. If this is a concern for you, reach out to me and I'll let you know how to extend it by another 3 years.  
+- Homes work up to 2^25 - 1 (33554431) blocks in both positive and negative x and z direction as well as 0-255 in y direction. This covers the whole possible minecraft world. Don't try to set a Home at the Farlands is what I'm trying to say.
 
 ### Contact
 
