@@ -3,7 +3,7 @@
 # Headdrops
 ### make players drop their skull
 
-[latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/headdrops_v2.0.0.zip) (1.14)
+[latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/headdrops_v2.0.0.zip) (1.14)  
 [1.13 version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/headdrops_v1.0.0.zip)
 
 ## What it does
