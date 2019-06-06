@@ -8,7 +8,7 @@
 
 ## What it does
 
-Makes players drop their own head if they are killed by another player.  
+Makes players drop their own head if they are killed.  
 The head will drop at the location the player was killed at.
 
 ## How to set up
