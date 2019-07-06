@@ -19,6 +19,9 @@ Make players drop their own head when killed by another player
 ### [Timer](https://github.com/Plagiatus/datapacks/tree/master/timer)
 Allows players to have individual counters in the world.
 
+### [Super Sponges](https://github.com/Plagiatus/datapacks/tree/master/super_sponge)
+Adds super sponges into the world that remove all water around them by slowly eating away at the water.
+
 ## Games
 
 ### [Itemchallenge](https://github.com/Plagiatus/datapacks/tree/master/itemchallenge)  
