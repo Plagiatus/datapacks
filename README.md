@@ -20,7 +20,7 @@ Make players drop their own head when killed by another player
 Allows players to have individual counters in the world.
 
 ### [Super Sponges](https://github.com/Plagiatus/datapacks/tree/master/super_sponge)
-Adds super sponges into the world that remove all water around them by slowly eating away at the water.
+Adds super sponges into the world that remove all water (or lava, or whatever block you want) around them by quickly eating away at the water.
 
 ## Games
 

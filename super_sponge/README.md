@@ -2,7 +2,7 @@
 
 # Super Sponge
 
-[latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.0.zip) (1.14)
+[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.zip) (1.14)
 
 ## Video
 
@@ -25,6 +25,18 @@ This number can be changed at any time you want.
 
 **Be aware that using this sponge especially with higher maximum numbers will lag the server!**
 
+## Customisation
+
+You can easily customize which blocks you want the sponge to replace.  
+For this, open up the `replace.json` file located inside the pack at `SuperSponge_vXXX/data/fill_sponge/tags/blocks/replace.json` and change the `values` tag to be whatever you want to replace.
+
+Here are three examples that you can download (you'll need to replace the `replace.json` file with one of these, renaming it to `replace.json`).
+
+| file                    | value                                                                                                                        |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| [replace_water](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/replace_water.json) (default)  | "minecraft:water", "minecraft:kelp", "minecraft:seagrass", "minecraft:tall_seagrass", "minecraft:bubble_column"              |
+| [replace_lava](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/replace_lava.json)              | "minecraft:lava"                                                                                                             |
+| [replace_underground](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/replace_underground.json)| "minecraft:dirt", "minecraft:grass_block", "minecraft:stone", "minecraft:andesite", "minecraft:granite", "minecraft:diorite" |
 
 ### Contact
 
@@ -32,6 +44,9 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+#### 1.1
+08.07.2019 fixed a bug that would cause it to ignore bubble columns. Added multiple replace.json files.
 
 #### 1.0
 
