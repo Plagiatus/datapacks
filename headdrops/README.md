@@ -3,13 +3,15 @@
 # Headdrops
 ### make players drop their skull
 
-[latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/Headdrops_v2.0.0.zip) (1.14)  
+[latest version (v2.0.1)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/Headdrops_v2.0.1.zip) (1.14)  
 [1.13 version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/headdrops/headdrops_v1.0.0.zip)
 
 ## What it does
 
-Makes players drop their own head if they are killed.  
+Makes players drop their own head if they are killed by another player.  
 The head will drop at the location the player was killed at.
+
+**If you want the player to always drop their head, no matter who killed them, use [v2.0.0](https://github.com/Plagiatus/datapacks/raw/master/headdrops/Headdrops_v2.0.0.zip) instead.**
 
 ## How to set up
 
