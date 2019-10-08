@@ -4,6 +4,10 @@
 
 [latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/home/homes_v1.1.zip) (1.14)
 
+## Video
+
+[Video of this datapack in action](https://www.youtube.com/watch?v=Qz3sOGlcX4c&)
+
 ## What it does
 
 Homes allow you to save positions in the world and teleport to them whenever you want, including different dimensions.
