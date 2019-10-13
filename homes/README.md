@@ -2,7 +2,7 @@
 
 # Homes
 
-[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/home/homes_v1.1.zip) (1.14)
+[latest version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/home/homes_v1.1.1.zip) (1.14)
 
 ## What it does
 
@@ -70,6 +70,9 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+#### 1.1.1
+13.10.2019 Removed the `replace:true` from the load and tick. No clue how they ended up in there.
 
 #### 1.1
 5.4.2019 Multidimensional Support
