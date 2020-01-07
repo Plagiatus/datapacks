@@ -2,7 +2,7 @@
 
 # Super Sponge
 
-[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) (1.14)
+[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) (1.14+)
 
 ## Video
 
@@ -19,7 +19,7 @@ Craftable by default by throwing 6 regular sponges and 3 nether stars onto the g
 Download the zip file and place it into your `world/datapacks` folder. If the world is already running, run `reload`. That's all you need to do.  
 That way it has been set to **10 blocks range**. To change that, use the following command in chat (replace XX with your desired range):
 
-    scoreboard players set maximum fillsponge XX
+    /scoreboard players set maximum fillsponge XX
 
 This number can be changed at any time you want.
 
