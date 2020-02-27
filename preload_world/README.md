@@ -77,6 +77,12 @@ If for whatever reason you want to abort the generation, you can run the followi
 
 _Please note that you will not be able to resume the generation once aborted!_
 
+## Uninstalling
+
+If you wish to uninstall/remove the pack, run the following function before you remove it, so you don't have any leftover data in your world that you don't need:
+
+    /function preload:uninstall
+
 ### Contact
 
 If you have any questions, concerns, praise or found a bug, you can contact me directly at [contact@plagiatus.net](mailto:contact@plagiatus.net) or use my [contact form](http://plagiatus.net/#contact) on my website.
