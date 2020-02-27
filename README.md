@@ -13,6 +13,9 @@ Set a percentage of players required to sleep. That way not everyone on the serv
 ### [Homes](https://github.com/Plagiatus/datapacks/tree/master/homes)  
 Set unlimited homes in your world that you can teleport to and rename. No OP required, Multiplayer friendly.
 
+### [Preload World](https://github.com/Plagiatus/datapacks/tree/master/preload_world)  
+Preload/Pre-Generate your world, so that when you play and explore later on, the server won't lag because it needs to generate new chunks.
+
 ### [Headdrops](https://github.com/Plagiatus/datapacks/tree/master/headdrops)
 Make players drop their own head when killed by another player
 
