@@ -1,7 +1,8 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png "Multiplayer Sleeping System")
+![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png "World Pre-Generation")
 
 # World Preloading/Pre-Generation
 
+[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip) (1.13+)
 [latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip) (1.13+)
 
 
@@ -49,8 +50,13 @@ This, together with `renderDistance` is the factor with the biggest impact on yo
 
 ### Size
 
+#### Center
+_Default: 0_  
+The center position around which you want to pre-generate your world can be set using `X` and `Z`. These values are independant of each other.
+
+#### Width
 _Default: 1024_  
-To set the size of your pre-generated area, use `DX` and `DZ`. These describe the side length of the generated area, centered around 0 0 _(not around worldspawn!)_. This means that the default value of 1024 will pre-generate the area from `-512 ~ -512` to `+512 ~ +512`. These values are independant of each other.  
+To set the size of your pre-generated area, use `DX` and `DZ`. These describe the side length of the generated area, centered around `X` and `Z` _(not around worldspawn!)_. This means that the default value of 1024 will pre-generate the area from `-512 ~ -512` to `+512 ~ +512` (assuming `X` and `Z` are set to their default of 0). These values are independant of each other.  
 Be aware that the generated area is _at least_ the size given in `DX` and `DZ`, and will most likely be a little bit bigger depending on many factors.
 
 ### Dimension
@@ -86,3 +92,11 @@ If you wish to uninstall/remove the pack, run the following function before you 
 ### Contact
 
 If you have any questions, concerns, praise or found a bug, you can contact me directly at [contact@plagiatus.net](mailto:contact@plagiatus.net) or use my [contact form](http://plagiatus.net/#contact) on my website.
+
+### Changelog
+
+#### 1.1 
+10.03.2020 Added X and Z Settings and their functionality
+
+#### 1.0
+27.02.2020 Created Pack 
