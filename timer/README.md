@@ -7,7 +7,7 @@
 
 ## What it does
 
-This datapack allows you to have individual timers, show the remaining time in the actionbar and send a message as well as a title to 
+This datapack allows you to have individual timers, show the remaining time in the actionbar and send a message as well as a title to the player once their timer is up.
 
 ## How to set up
 
