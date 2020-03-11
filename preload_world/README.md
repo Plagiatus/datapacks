@@ -20,7 +20,7 @@ Download the zip file and place it into your `world/datapacks` folder. If the wo
 
 ## Settings
 
-The generation will use the player to load all the chunks, this is why it's important to set the settings correctly. Make sure you go through ALL the settings and make sure they are correct. All of these settings have a default value. If you're fine with those values, you can keeop them that way.
+The generation will use the player to load all the chunks, this is why it's important to set the settings correctly. Make sure you go through ALL the settings and make sure they are correct. All of these settings have a default value. If you're fine with those values, you can keep them that way.
 
 To change a setting, run this command in chat, replacing `<settingName>` with the name of the setting you want to change and `<value>` with the value this setting should have now.
 
@@ -45,8 +45,8 @@ You need to set `renderDistance` to your clients (singleplayer) or your servers 
 ### waitTime
 
 _Default: 40 (2 seconds)_  
-`waitTime` describes the amount of ticks (there are 20 ticks per second) between each step of the generation. If your computer is stronger, you might be able to decrease this value (I'd recommend not to go below 20), if your Computer has trouble keeping up, increase this number.  
-This, together with `renderDistance` is the factor with the biggest impact on your Processor, so tweak as necessary.
+`waitTime` describes the amount of ticks (there are 20 ticks per second) between each step of the generation. If your computer is stronger, you might be able to decrease this value (I'd recommend not to go below 20), if your computer has trouble keeping up, increase this number.  
+This, together with `renderDistance` is the factor with the biggest impact on your processor, so tweak as necessary.
 
 ### Size
 
@@ -62,7 +62,7 @@ Be aware that the generated area is _at least_ the size given in `DX` and `DZ`, 
 ### Dimension
 
 _Default: 1_   
-You can set which dimension you want to pre-generate. For this, set each of `overworld`, `nether` and `end` to either 1 (pre-generate) or 0 (don't pre-generate). You cannot set different values for different dimensions, if you want/need that, you'll have to run them one after the other.  
+You can set which dimension you want to pre-generate. For this, set each of `overworld`, `nether` and `end` to either 1 (pre-generate) or 0 (don't pre-generate). You cannot set different settings (generation size, wait time etc) for different dimensions, so if you want/need that, you'll have to run them one after the other.  
 _This is the only setting that is changed to 0 after a run is completed to prevent accidental re-runs!_
 
 ## Running the Generation
@@ -81,7 +81,7 @@ If for whatever reason you want to abort the generation, you can run the followi
 
     /function preload:run/done
 
-_Please note that you will not be able to resume the generation once aborted!_
+_Please note that you will not be able to resume the generation once aborted and will have to restart!_
 
 ## Uninstalling
 

@@ -141,7 +141,7 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p><strong>This datapack has only been tested in singleplayer and it is recommended that you use it in singleplayer or on a server where you&#39;re the only one online. While it shouldn&#39;t cause any issues to do it on a server (except for the lag you&#39;re trying to prevent when doing this), you should not do that unless you have to!</strong></p>
 <p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. Then join the world if you aren&#39;t already, make sure all the settings are correct and run the function command that starts the process.</p>
 <h2 id="settings">Settings</h2>
-<p>The generation will use the player to load all the chunks, this is why it&#39;s important to set the settings correctly. Make sure you go through ALL the settings and make sure they are correct. All of these settings have a default value. If you&#39;re fine with those values, you can keeop them that way.</p>
+<p>The generation will use the player to load all the chunks, this is why it&#39;s important to set the settings correctly. Make sure you go through ALL the settings and make sure they are correct. All of these settings have a default value. If you&#39;re fine with those values, you can keep them that way.</p>
 <p>To change a setting, run this command in chat, replacing <code>&lt;settingName&gt;</code> with the name of the setting you want to change and <code>&lt;value&gt;</code> with the value this setting should have now.</p>
 <pre><code>/scoreboard players set &lt;settingName&gt; pl.settings &lt;value&gt;</code></pre><h3 id="displaying-the-settings">Displaying the settings</h3>
 <p>All settings are scoreboard scores, which can be shown by setting the scoreboard <code>pl.settings</code> to be viewed on the sidebar like this:  </p>
@@ -150,21 +150,21 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <h3 id="renderdistance">renderDistance</h3>
 <p><em>Default: 8</em><br>You need to set <code>renderDistance</code> to your clients (singleplayer) or your servers (multiplayer) render distance, as that is important for the size of the steps the generation can make. You can also set it to a lower number than your actual render distance for a less resource intensive generation.</p>
 <h3 id="waittime">waitTime</h3>
-<p><em>Default: 40 (2 seconds)</em><br><code>waitTime</code> describes the amount of ticks (there are 20 ticks per second) between each step of the generation. If your computer is stronger, you might be able to decrease this value (I&#39;d recommend not to go below 20), if your Computer has trouble keeping up, increase this number.<br>This, together with <code>renderDistance</code> is the factor with the biggest impact on your Processor, so tweak as necessary.</p>
+<p><em>Default: 40 (2 seconds)</em><br><code>waitTime</code> describes the amount of ticks (there are 20 ticks per second) between each step of the generation. If your computer is stronger, you might be able to decrease this value (I&#39;d recommend not to go below 20), if your computer has trouble keeping up, increase this number.<br>This, together with <code>renderDistance</code> is the factor with the biggest impact on your processor, so tweak as necessary.</p>
 <h3 id="size">Size</h3>
 <h4 id="center">Center</h4>
 <p><em>Default: 0</em><br>The center position around which you want to pre-generate your world can be set using <code>X</code> and <code>Z</code>. These values are independant of each other.</p>
 <h4 id="width">Width</h4>
 <p><em>Default: 1024</em><br>To set the size of your pre-generated area, use <code>DX</code> and <code>DZ</code>. These describe the side length of the generated area, centered around <code>X</code> and <code>Z</code> <em>(not around worldspawn!)</em>. This means that the default value of 1024 will pre-generate the area from <code>-512 ~ -512</code> to <code>+512 ~ +512</code> (assuming <code>X</code> and <code>Z</code> are set to their default of 0). These values are independant of each other.<br>Be aware that the generated area is <em>at least</em> the size given in <code>DX</code> and <code>DZ</code>, and will most likely be a little bit bigger depending on many factors.</p>
 <h3 id="dimension">Dimension</h3>
-<p><em>Default: 1</em><br>You can set which dimension you want to pre-generate. For this, set each of <code>overworld</code>, <code>nether</code> and <code>end</code> to either 1 (pre-generate) or 0 (don&#39;t pre-generate). You cannot set different values for different dimensions, if you want/need that, you&#39;ll have to run them one after the other.<br><em>This is the only setting that is changed to 0 after a run is completed to prevent accidental re-runs!</em></p>
+<p><em>Default: 1</em><br>You can set which dimension you want to pre-generate. For this, set each of <code>overworld</code>, <code>nether</code> and <code>end</code> to either 1 (pre-generate) or 0 (don&#39;t pre-generate). You cannot set different settings (generation size, wait time etc) for different dimensions, so if you want/need that, you&#39;ll have to run them one after the other.<br><em>This is the only setting that is changed to 0 after a run is completed to prevent accidental re-runs!</em></p>
 <h2 id="running-the-generation">Running the Generation</h2>
 <p>Once all the settings are set appropriately, run the following command as the player in the game:</p>
 <pre><code>/function preload:run</code></pre><p>After this, you will be teleported around a lot. Once the process has finished, you will be teleported to the worldspawn. The actionbar will inform you about the current progress.</p>
 <p><strong>This process takes a while and only runs while the player is in the world!</strong></p>
 <h2 id="aborting-the-generation">Aborting the Generation</h2>
 <p>If for whatever reason you want to abort the generation, you can run the following command:</p>
-<pre><code>/function preload:run/done</code></pre><p><em>Please note that you will not be able to resume the generation once aborted!</em></p>
+<pre><code>/function preload:run/done</code></pre><p><em>Please note that you will not be able to resume the generation once aborted and will have to restart!</em></p>
 <h2 id="uninstalling">Uninstalling</h2>
 <p>If you wish to uninstall/remove the pack, run the following function before you remove it, so you don&#39;t have any leftover data in your world that you don&#39;t need:</p>
 <pre><code>/function preload:uninstall</code></pre><h3 id="contact">Contact</h3>
