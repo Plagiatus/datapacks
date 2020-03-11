@@ -2,8 +2,8 @@
 
 # World Preloading/Pre-Generation
 
-[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip) (1.13+)
-[latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip) (1.13+)
+[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip) (1.13+)   
+[(v1.0)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip) (1.13+)
 
 
 ## What it does
