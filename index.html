@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiatus' Datapacks</title>
+    <link rel="stylesheet" href="website/style.css">
+    <script src="website/script.js"></script>
+</head>
+
+<body>
+    <a href="https://plagiatus.net">⬅ go back to plagiatus.net</a>
+    <h1>Plagiatus' Datapacks</h1>
+    <p>Here you can find an overview over all the datapacks I've made.</p>
+    <p>Just click on the one that you're interested in and it will expand.</p>
+    <h2>Utility</h2>
+    <div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/headdrops/banner.png" alt="Banner" title="Itemchallenge"></p>
+<h1 id="headdrops">Headdrops</h1>
+<h3 id="make-players-drop-their-skull">make players drop their skull</h3>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/headdrops/Headdrops_v2.0.1.zip">latest version (v2.0.1)</a> (1.14 and above)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/headdrops/headdrops_v1.0.0.zip">1.13 version (v1.0.0)</a></p>
+<h2 id="what-it-does">What it does</h2>
+<p>Makes players drop their own head if they are killed by another player.<br>The head will drop at the location the player was killed at.</p>
+<p><strong>If you want the player to always drop their head, no matter who killed them, use <a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/headdrops/Headdrops_v2.0.0.zip">v2.0.0</a> instead.</strong></p>
+<h2 id="how-to-set-up">How to set up</h2>
+<h3 id="version-20-114-and-above">Version 2.0 (1.14) and above:</h3>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.  </p>
+<h3 id="version-10-113">Version 1.0 (1.13):</h3>
+<p>After the datapack has been added to your world, it still needs some manual editing for it to work with your own skulls.
+Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add one of the following lines for each of your players, obviously replacing <code>Playername</code> with the actual name of the player:</p>
+<pre><code>execute at @a[scores={headDeath=1..},name=Playername] run summon item ~ ~ ~ {Item:{id:player_head,Count:1,tag:{SkullOwner:Playername}}}</code></pre><h3 id="additional-info">Additional Info</h3>
+<p>Skulls that are dropped like this won&#39;t stack with the ones that have been placed and broken again, because the game converts the name of the SkullOwner into the texture.</p>
+<h2 id="contact">Contact</h2>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+</div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/homes/banner.png" alt="Banner" title="Homes Banner"></p>
+<h1 id="homes">Homes</h1>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/home/homes_v1.1.1.zip">latest version (v1.1.1)</a> (1.14)</p>
+<h2 id="video">Video</h2>
+<p><a target='_blank' href="https://www.youtube.com/watch?v=Qz3sOGlcX4c&amp;">Video of this datapack in action</a></p>
+<h2 id="what-it-does">What it does</h2>
+<p>Homes allow you to save positions in the world and teleport to them whenever you want, including different dimensions.</p>
+<p>This Datapack allows you to set unlimited homes in any world. The players of the world don&#39;t need OP to use the commands.</p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.  </p>
+<p>You can look at the ingame-help for the datapack by running</p>
+<pre><code>/trigger home.help</code></pre><p>But while you&#39;re here you might as well read the long explanation below ↓</p>
+<h2 id="commands-explanations">Commands explanations</h2>
+<h3 id="general">General</h3>
+<ul>
+<li>All commands need to be prefaced with <code>/trigger</code>.  </li>
+<li>Some of the commands allow you to specify a specific home (the ones annotated with &quot;(set #)&quot;). You will always have to identify the home by its ID and cannot identify it via its name.  </li>
+<li>If you&#39;re not specifying a specific home in a command that allows for it, it will default to home number 1.  </li>
+<li>Negative values are ignored.  </li>
+<li><em>There are no undos.</em></li>
+</ul>
+<h3 id="specific-commands">Specific commands</h3>
+<p><code>/trigger home.help</code><br>Display the ingame help page.</p>
+<p><code>/trigger home (set #)</code><br>Teleport to one of your homes. Defaults to Home #1 if nothing else is specified.</p>
+<p><code>/trigger home.set (set #)</code><br>Set a new home location. This command will also override a home if set to an existing number.</p>
+<p><code>/trigger home.delete (set #)</code><br>Deletes the specified home.  </p>
+<p><code>/trigger home.list</code><br>Lists all your homes in a list with their ids, coordinates and names.</p>
+<p><code>/trigger home.set_name (set #)</code><br>Sets the name of the specified home to the name of the item in your hand. <strong>The item needs to be renamed in an anvil for it to work.</strong> If it isn&#39;t or your hand is empty, it will not change the name.</p>
+<h2 id="further-information">Further Information</h2>
+<ul>
+<li><p><strong>If you want to move your spawnchunks, you&#39;ll have to run this command afterwards to keep the datapack working:</strong></p>
+<pre><code>teleport @e[type=area_effect_cloud,tag=pla_home] x y z</code></pre></li>
+</ul>
+<p>replace <code>x y z</code> with your new worldspawn coordinates.</p>
+<ul>
+<li>Homes are running out ~3 years (real time) after you&#39;ve created them. If this is a concern for you, reach out to me and I&#39;ll let you know how to extend it by another 3 years.  </li>
+<li>Homes work up to 2^25 - 1 (33554431) blocks in both positive and negative x and z direction as well as 0-255 in y direction. This covers the whole possible minecraft world. Don&#39;t try to set a Home at the Farlands is what I&#39;m trying to say.</li>
+</ul>
+<h4 id="uninstalling">Uninstalling</h4>
+<p>To remove all traces of the pack from your world you can run the <code>homes:uninstall</code> function before you deactivate the datapack (or delete it from your world folder). <strong>This will remove all set homes for everyone</strong> as well as remove all the scoreboard objectives it&#39;s using. If you just deactivate the pack and reactivate it again afterwards, all the homes will still be there.</p>
+<h3 id="contact">Contact</h3>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<h3 id="changelog">Changelog</h3>
+<h4 id="111">1.1.1</h4>
+<p>13.10.2019 Removed the <code>replace:true</code> from the load and tick. No clue how they ended up in there.</p>
+<h4 id="11">1.1</h4>
+<p>5.4.2019 Multidimensional Support</p>
+<h4 id="10">1.0</h4>
+<p>4.5.2019 released</p>
+</div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png" alt="Banner" title="Multiplayer Sleeping System"></p>
+<h1 id="multiplayer-percentage-sleeping-system">Multiplayer Percentage Sleeping System</h1>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.1.0.zip">latest version (v2.1.0)</a> (1.14+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip">1.13 version (v2.0.2)</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv1.0.0.zip">1.12 version (v1.0.0)</a>  </p>
+<h2 id="what-it-does">What it does</h2>
+<p>This Datapack is intended for larger survival servers. It allows the OPs of the server to set a percentage of players required to sleep to skip the night.
+So if you want to skip the night if half of the players playing are in a bed, set the percentage to 50%.</p>
+<p>When a player is trying to pass the night, a message in chat with how many players are left as well as an advancement will make other online players aware of this intent.</p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.<br>That way it has been set to <strong>10% as a standard</strong>. To change that, use the following command in chat (replace XX with your desired percentage):</p>
+<pre><code>scoreboard players set requiredPercent multSleep.count XX</code></pre><p>This number can be changed at any time you want.</p>
+<h2 id="further-information">Further Information</h2>
+<p>This datapack will...</p>
+<ul>
+<li>...always require a minimum of 1 player to sleep.  </li>
+<li>...round down the required players. So if the percentage is set to 50% and 3 players are online, 1.5 players need to sleep, which the pack rounds down to one.  </li>
+<li>...clear the weather whenever the night is skipped for 999999 seconds. If you&#39;d rather have the &quot;normal&quot; behaviour of it turning to sun for a limited but random amount of time, you can swap out the <code>skip.mcfunction</code> file for <a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/skip.mcfunction">this one</a>  </li>
+<li>...not interfere with the phantom timer. If you are in a bed, the timer resets, as always.  </li>
+<li>...only consider players in the overworld when counting how many players need to sleep.</li>
+<li>...add to the time instead of setting it, so you won&#39;t loose your time played/ingame days</li>
+</ul>
+<h3 id="contact">Contact</h3>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<h3 id="changelog">Changelog</h3>
+<h4 id="210">2.1.0</h4>
+<p>19.04.2019 Update to mc 1.14</p>
+<h4 id="202">2.0.2</h4>
+<p>11.01.2019 made the pack more reliable on laggier servers. Prevented a double night skip from happening.</p>
+<h4 id="201">2.0.1</h4>
+<p>11.08.2018 fixed a small bug that would sometimes cause the toast notifications not to show up as well as not skip the night in specific circumstances.</p>
+<h4 id="20">2.0</h4>
+<p>updated to mc 1.13</p>
+</div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png" alt="Banner" title="World Pre-Generation"></p>
+<h1 id="world-preloadingpre-generation">World Preloading/Pre-Generation</h1>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip">latest version (v1.1)</a> (1.13+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip">(v1.0)</a> (1.13+)</p>
+<h2 id="what-it-does">What it does</h2>
+<p>This datapack will allow you to easily pre-generate/preload your world, for when you want to play e.g. survival and don&#39;t want your server to be generating the world (aka lagging) while you&#39;re exploring for the first few thousand blocks. <strong>This is especially important in multiplayer.</strong></p>
+<p><strong>This datapack is intended to be run BEFORE you play in a world, but will still work after you&#39;ve played for a while as well.</strong></p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p><strong>This datapack has only been tested in singleplayer and it is recommended that you use it in singleplayer or on a server where you&#39;re the only one online. While it shouldn&#39;t cause any issues to do it on a server (except for the lag you&#39;re trying to prevent when doing this), you should not do that unless you have to!</strong></p>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. Then join the world if you aren&#39;t already, make sure all the settings are correct and run the function command that starts the process.</p>
+<h2 id="settings">Settings</h2>
+<p>The generation will use the player to load all the chunks, this is why it&#39;s important to set the settings correctly. Make sure you go through ALL the settings and make sure they are correct. All of these settings have a default value. If you&#39;re fine with those values, you can keeop them that way.</p>
+<p>To change a setting, run this command in chat, replacing <code>&lt;settingName&gt;</code> with the name of the setting you want to change and <code>&lt;value&gt;</code> with the value this setting should have now.</p>
+<pre><code>/scoreboard players set &lt;settingName&gt; pl.settings &lt;value&gt;</code></pre><h3 id="displaying-the-settings">Displaying the settings</h3>
+<p>All settings are scoreboard scores, which can be shown by setting the scoreboard <code>pl.settings</code> to be viewed on the sidebar like this:  </p>
+<pre><code>/scoreboard objectives setdisplay sidebar pl.settings</code></pre><h3 id="setgamerules">setGamerules</h3>
+<p><em>Default: 1</em><br>If <code>setGamerules</code> is set to 1, it will set the gamerules <code>doDaylightCycle</code>, <code>doWeatherCycle</code> and <code>doMobSpawning</code> to false at the beginning and to true at the end of the generation. Set it to 0 to disable this functionality.  </p>
+<h3 id="renderdistance">renderDistance</h3>
+<p><em>Default: 8</em><br>You need to set <code>renderDistance</code> to your clients (singleplayer) or your servers (multiplayer) render distance, as that is important for the size of the steps the generation can make. You can also set it to a lower number than your actual render distance for a less resource intensive generation.</p>
+<h3 id="waittime">waitTime</h3>
+<p><em>Default: 40 (2 seconds)</em><br><code>waitTime</code> describes the amount of ticks (there are 20 ticks per second) between each step of the generation. If your computer is stronger, you might be able to decrease this value (I&#39;d recommend not to go below 20), if your Computer has trouble keeping up, increase this number.<br>This, together with <code>renderDistance</code> is the factor with the biggest impact on your Processor, so tweak as necessary.</p>
+<h3 id="size">Size</h3>
+<h4 id="center">Center</h4>
+<p><em>Default: 0</em><br>The center position around which you want to pre-generate your world can be set using <code>X</code> and <code>Z</code>. These values are independant of each other.</p>
+<h4 id="width">Width</h4>
+<p><em>Default: 1024</em><br>To set the size of your pre-generated area, use <code>DX</code> and <code>DZ</code>. These describe the side length of the generated area, centered around <code>X</code> and <code>Z</code> <em>(not around worldspawn!)</em>. This means that the default value of 1024 will pre-generate the area from <code>-512 ~ -512</code> to <code>+512 ~ +512</code> (assuming <code>X</code> and <code>Z</code> are set to their default of 0). These values are independant of each other.<br>Be aware that the generated area is <em>at least</em> the size given in <code>DX</code> and <code>DZ</code>, and will most likely be a little bit bigger depending on many factors.</p>
+<h3 id="dimension">Dimension</h3>
+<p><em>Default: 1</em><br>You can set which dimension you want to pre-generate. For this, set each of <code>overworld</code>, <code>nether</code> and <code>end</code> to either 1 (pre-generate) or 0 (don&#39;t pre-generate). You cannot set different values for different dimensions, if you want/need that, you&#39;ll have to run them one after the other.<br><em>This is the only setting that is changed to 0 after a run is completed to prevent accidental re-runs!</em></p>
+<h2 id="running-the-generation">Running the Generation</h2>
+<p>Once all the settings are set appropriately, run the following command as the player in the game:</p>
+<pre><code>/function preload:run</code></pre><p>After this, you will be teleported around a lot. Once the process has finished, you will be teleported to the worldspawn. The actionbar will inform you about the current progress.</p>
+<p><strong>This process takes a while and only runs while the player is in the world!</strong></p>
+<h2 id="aborting-the-generation">Aborting the Generation</h2>
+<p>If for whatever reason you want to abort the generation, you can run the following command:</p>
+<pre><code>/function preload:run/done</code></pre><p><em>Please note that you will not be able to resume the generation once aborted!</em></p>
+<h2 id="uninstalling">Uninstalling</h2>
+<p>If you wish to uninstall/remove the pack, run the following function before you remove it, so you don&#39;t have any leftover data in your world that you don&#39;t need:</p>
+<pre><code>/function preload:uninstall</code></pre><h3 id="contact">Contact</h3>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a> on my website.</p>
+<h3 id="changelog">Changelog</h3>
+<h4 id="11">1.1</h4>
+<p>10.03.2020 Added X and Z Settings and their functionality</p>
+<h4 id="10">1.0</h4>
+<p>27.02.2020 Created Pack </p>
+</div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/super_sponge/banner.png" alt="Banner" title="Multiplayer Sleeping System"></p>
+<h1 id="super-sponge">Super Sponge</h1>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip">latest version (v1.1)</a> (1.14+)</p>
+<h2 id="video">Video</h2>
+<p><a target='_blank' href="https://streamable.com/u9ux4">Video of this datapack in action</a></p>
+<h2 id="what-it-does">What it does</h2>
+<p>This datapack allows for the creation of super sponges that effectively remove all water in a large area.</p>
+<p>Craftable by default by throwing 6 regular sponges and 3 nether stars onto the ground together. Can easily be adjusted to whatever fits your servers needs. (If you need help with that, <a target='_blank' href="http://plagiatus.net/#contact">feel free to reach out</a>).</p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.<br>That way it has been set to <strong>10 blocks range</strong>. To change that, use the following command in chat (replace XX with your desired range):</p>
+<pre><code>/scoreboard players set maximum fillsponge XX</code></pre><p>This number can be changed at any time you want.</p>
+<p><strong>Be aware that using this sponge especially with higher maximum numbers will lag the server!</strong></p>
+<h2 id="customisation">Customisation</h2>
+<p>You can easily customize which blocks you want the sponge to replace.<br>For this, open up the <code>replace.json</code> file located inside the pack at <code>SuperSponge_vXXX/data/fill_sponge/tags/blocks/replace.json</code> and change the <code>values</code> tag to be whatever you want to replace.</p>
+<p>Here are three examples that you can download (<code>rightclick &gt; save target as</code>). You&#39;ll need to replace the <code>replace.json</code> file with one of these, renaming it to <code>replace.json</code>.</p>
+<table>
+<thead>
+<tr>
+<th>file</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/replace_water.json">replace_water</a> (default)</td>
+<td>&quot;minecraft:water&quot;, &quot;minecraft:kelp&quot;, &quot;minecraft:seagrass&quot;, &quot;minecraft:tall_seagrass&quot;, &quot;minecraft:bubble_column&quot;</td>
+</tr>
+<tr>
+<td><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/replace_lava.json">replace_lava</a></td>
+<td>&quot;minecraft:lava&quot;</td>
+</tr>
+<tr>
+<td><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/replace_underground.json">replace_underground</a></td>
+<td>&quot;minecraft:dirt&quot;, &quot;minecraft:grass_block&quot;, &quot;minecraft:stone&quot;, &quot;minecraft:andesite&quot;, &quot;minecraft:granite&quot;, &quot;minecraft:diorite&quot;</td>
+</tr>
+</tbody></table>
+<h3 id="contact">Contact</h3>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<h3 id="changelog">Changelog</h3>
+<h4 id="11">1.1</h4>
+<p>08.07.2019 fixed a bug that would cause it to ignore bubble columns. Added multiple replace.json files.</p>
+<h4 id="10">1.0</h4>
+<p>06.07.2019 created the pack</p>
+</div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png" alt="Banner" title="Timer System"></p>
+<h1 id="timer">Timer</h1>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/timer/timerv1.0.0.zip">latest version (v1.0.0)</a> (1.13)</p>
+<h2 id="what-it-does">What it does</h2>
+<p>This datapack allows you to have individual timers, show the remaining time in the actionbar and send a message as well as a title to </p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do, the pack will set up all it needs itself.  </p>
+<h2 id="how-to-use">How to use</h2>
+<p>All of the controls are run through trigger commands. To set the value of a trigger, run <code>/trigger &lt;triggername&gt; set|add &lt;value&gt;</code>.  </p>
+<p><code>/trigger &lt;triggername&gt; add 1</code> can be abbreviated as <code>/trigger &lt;triggername&gt;</code>.</p>
+<p><strong>All timers are personal timers. There are no global timers in this pack.</strong></p>
+<h4 id="controls">Controls</h4>
+<p>The basic control triggers are as follows</p>
+<ul>
+<li><code>timer.start</code><br>starts a new timer. if the timer has been paused previously, it will resume the timer. uses the set hours, minutes and seconds set through the options when using a new timer.  </li>
+<li><code>timer.stop</code><br>stops the current timer.  </li>
+<li><code>timer.pause</code><br>pauses the timer. can be resumed where it paused by running <code>timer.start</code>.</li>
+</ul>
+<h4 id="options">Options</h4>
+<p>There are a bunch of different options you can set and use to run the timer.</p>
+<ul>
+<li><p><code>timer.seconds</code><br>The amount of seconds the timer should use when starting a new timer. Default: 0</p>
+</li>
+<li><p><code>timer.minutes</code><br>The amount of minutes the timer should use when starting a new timer. Default: 10</p>
+</li>
+<li><p><code>timer.hours</code><br>The amount of minutes the timer should use when starting a new timer. Default: 0</p>
+</li>
+<li><p><code>timer.showSecond</code><br>1+: Shows the seconds left in the actionbar.<br>0-: Doesn&#39;t show the seconds left.<br>Default: 1</p>
+</li>
+<li><p><code>timer.showMinute</code><br>1+: Shows the minutes and seconds left in the actionbar. Overrides the <code>showSecond</code> setting.<br>0-: Doesn&#39;t show the minutes left.<br>Default: 1</p>
+</li>
+<li><p><code>timer.showHour</code><br>1+: Shows the hours, minutes and seconds left in the actionbar. Overrides the <code>showMinute</code> setting.<br>0-: Doesn&#39;t show the hours left.<br>Default: 1</p>
+</li>
+<li><p><code>timer.showTitle</code><br>1+: Shows a title at the end of the timer.<br>0-: Doesn&#39;t show a title at the end of the timer.<br>Default: 1</p>
+</li>
+<li><p><code>timer.sendMsg</code><br>1+: Sends a message to the chat at the end of the timer.
+0-: Doesn&#39;t send a message at the end of the timer.<br>Default: 1</p>
+</li>
+</ul>
+<h2 id="further-important-information">Further Important Information</h2>
+<p>This datapack uses the worldborder for accurate, lag-friendly and not by lag affected timing. That in return also means that it is...</p>
+<ul>
+<li>...<strong>not compatible with other datapacks that use the worldborder in any way</strong>.</li>
+<li>...<strong>not pausing</strong> automatically when a player leaves the game in multiplayer, thus the timer might run out while the player is offline.</li>
+<li>...<strong>not pausing</strong> automatically when pausing the game in singleplayer without leaving the world due to how the worldborder works.</li>
+</ul>
+<h3 id="contact">Contact</h3>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<h3 id="changelog">Changelog</h3>
+<h4 id="100">1.0.0</h4>
+<p>14.02.2019 Published the first version</p>
+</div>
+    <h2>Games</h2>
+    <div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/itemchallenge/banner.png" alt="Banner" title="Itemchallenge"></p>
+<h1 id="itemchallenge">Itemchallenge</h1>
+<h3 id="collect-every-item-in-the-game">collect every item in the game</h3>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v2.0.0.zip">latest version (v2.0.0)</a> (1.13)</p>
+<h2 id="how-to-play">How to play</h2>
+<p>The premise is easy: Find every item in the game and return it to the shrine.<br>The problem: There are 704 different items in the game obtainable in survival.  </p>
+<p>All you have to do is move up to the shrine and place the items you want to register into the chest. <strong>Be aware that that will consume the item.</strong><br>The number in the actionbar displays the total amount of found items.<br>Your progress will also be tracked on the advancement screen. There you can see what items you have already collected and which ones are left.</p>
+<p>Around the shrine, once placed, is an &quot;adventure mode&quot; area, that will prevent you from building or breaking any blocks in close proximity to the shrine.<br>It will also protect itself against creeper explosions.</p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do. Now you need to find a good place for the shrine to be placed.
+if you think you&#39;ve found that place, stand there and run</p>
+<pre><code>function itemchallenge:spawn_shrine</code></pre><p>Make sure you have found the best spot, as having mutltiple shrines will break the pack.</p>
+<p>After placement you&#39;ll notice the adventure mode aura around the shrine. If you want/need to place blocks around the shrine, you have to switch to creative mode.</p>
+<h2 id="further-information">Further Information</h2>
+<p>Originally created for <em>Hardcore Hermits</em>, a series on the <a target='_blank' href="http://hermitcraft.com/">Hermitcraft</a> Server. Idea by <a target='_blank' href="http://xisumavoid.com/">Xisumavoid</a>.</p>
+<h3 id="multiplayer">Multiplayer</h3>
+<p>It is possible to play this datapack in multiplayer, but the scores are counted for the whole world and not individually per player.</p>
+<h3 id="episodes">Episodes</h3>
+<p>That is why there is a &quot;episode&quot; mechanic built into this datapack. If you are a youtuber yourself and want timed 20 minute Episodes to play by, use </p>
+<pre><code>/trigger startEpisode</code></pre><p>to start the timer. When the episode is over, you will get a message in chat as well as a title on screen informing you that it is over.<br><em>Using this feature will stop the daylight circle once the episode is over and reenable it when a new episode is started!</em></p>
+<h3 id="problems-that-may-occur">Problems that may occur</h3>
+<p>The most common problem is that an item isn&#39;t detected eventhough it should be. That is most definitly because of one reason:<br>As soon as no player is in close proximity to the shrine anymore, the shrine stops detecting items (for lag reasons). So if you put in an item to get detected, just wait around the shrine for a few seconds,
+that way you can be sure it&#39;s detected correctly.</p>
+<h2 id="contact">Contact</h2>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+</div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/mobchallenge/banner.png" alt="Banner" title="Mobchallenge"></p>
+<h1 id="mobchallenge">Mobchallenge</h1>
+<h3 id="kill-every-mob-in-the-game">kill every mob in the game</h3>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/mobchallenge/mobchallenge_perworld_v1.0.zip">latest version (v1.0)</a> (1.13.1)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/mobchallenge/mobchallenge_perworld_v2.0.0.zip">minecraft 1.14 version, tested in 18w45a (v2.0)</a> (1.14) <em>this one has a bunch of changed mechanics that alter the game in itself, for all the details check out <a target='_blank' href="https://www.youtube.com/watch?v=V1IfjWjNQSA">Xisumavoid&#39;s Video</a> about them.</em></p>
+<h2 id="how-to-play">How to play</h2>
+<p>Find and kill every mob in the game. It&#39;s as easy as that.<br>There are 52 (+4) mobs in this game that can be killed. This pack tracks 55 of them.
+(The +4 are giant, illusioner, zombie horse, and other players, which aren&#39;t neccessarily available in the game. The later 3 are part of the pack.)
+<em>(In 1.14 there are a total of 62 mobs, the only one not tracked is the giant.)</em></p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.</p>
+<h2 id="further-information">Further Information</h2>
+<p>Originally created for <em>Hardcore Hermits</em>, a series on the <a target='_blank' href="http://hermitcraft.com/">Hermitcraft</a> Server. Idea by <a target='_blank' href="http://xisumavoid.com/">Xisumavoid</a>.
+<em>Heads, the zombie horse spawning and the changed loottables in the 1.14 Version by <a target='_blank' href="https://www.youtube.com/c/MinecraftSpace">MSpaceDev</a>.</em></p>
+<h3 id="multiplayer">Multiplayer</h3>
+<p>It is possible to play this datapack in multiplayer, but the scores are counted for the whole world and not individually per player.</p>
+<p>A second pack that tracks per player is in the works.</p>
+<h3 id="problems-that-may-occur">Problems that may occur</h3>
+<p>When in multiplayer you kill a mob while another player is offline, they won&#39;t recieve the updated advancements when they come back online until someone kills something they haven&#39;t killed yet.</p>
+<h2 id="contact">Contact</h2>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+</div>
+</body>
+
+</html>

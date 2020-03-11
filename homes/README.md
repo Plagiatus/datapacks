@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/homes/banner.png "Homes Banner")
+![Homes Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/homes/banner.png "Homes")
 
 # Homes
 

@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png "Timer System")
+![Timer Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png "Timer System")
 
 # Timer
 

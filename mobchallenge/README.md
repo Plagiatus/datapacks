@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/mobchallenge/banner.png "Mobchallenge")
+![Mobchallenge Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/mobchallenge/banner.png "Mobchallenge")
 
 # Mobchallenge
 ### kill every mob in the game

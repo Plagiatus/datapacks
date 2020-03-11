@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/super_sponge/banner.png "Multiplayer Sleeping System")
+![Super Sponge Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/super_sponge/banner.png "Super Sponge")
 
 # Super Sponge
 

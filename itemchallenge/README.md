@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/itemchallenge/banner.png "Itemchallenge")
+![Itemchallenge Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/itemchallenge/banner.png "Itemchallenge")
 
 # Itemchallenge
 ### collect every item in the game

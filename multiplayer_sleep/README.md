@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png "Multiplayer Sleeping System")
+![Multiplayer Sleep Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png "Multiplayer Sleeping System")
 
 # Multiplayer Percentage Sleeping System
 

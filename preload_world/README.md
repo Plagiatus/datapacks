@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png "World Pre-Generation")
+![World Pre-Generation Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png "World Pre-Generation")
 
 # World Preloading/Pre-Generation
 
