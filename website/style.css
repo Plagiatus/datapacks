@@ -16,11 +16,11 @@ div.pack {
     padding: 10px;
     max-height: 150px;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 div.pack.enlarged {
     max-width: 720px;
-    animation: enlarge 0.3s;
     max-height: none;
 }
 
@@ -61,9 +61,4 @@ a {
     border-radius: 3px;
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: #111111;
-}
-
-@keyframes enlarge {
-    from {max-width: 400px;}
-    to {max-width: 720px;}
 }
