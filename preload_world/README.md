@@ -2,7 +2,8 @@
 
 # World Preloading/Pre-Generation
 
-[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip) (1.13+)   
+[latest version (v1.2)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.2.zip) (1.13+)  
+[(v1.1)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip) (1.13+)  
 [(v1.0)](https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip) (1.13+)
 
 
@@ -36,6 +37,7 @@ All settings are scoreboard scores, which can be shown by setting the scoreboard
 
 _Default: 1_  
 If `setGamerules` is set to 1, it will set the gamerules `doDaylightCycle`, `doWeatherCycle` and `doMobSpawning` to false at the beginning and to true at the end of the generation. Set it to 0 to disable this functionality.  
+_Please note that the `spectatorsGenerateChunks` gamerule will always be set to true, no matter what these settings are._
 
 ### renderDistance
 
@@ -94,6 +96,9 @@ If you wish to uninstall/remove the pack, run the following function before you 
 If you have any questions, concerns, praise or found a bug, you can contact me directly at [contact@plagiatus.net](mailto:contact@plagiatus.net) or use my [contact form](http://plagiatus.net/#contact) on my website.
 
 ### Changelog
+
+#### 1.2  
+09.05.2020 Used spectator mode and absolute heights for better useability. Also added an estimate for the time needed.
 
 #### 1.1 
 10.03.2020 Added X and Z Settings and their functionality

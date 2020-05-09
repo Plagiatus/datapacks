@@ -133,7 +133,7 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>updated to mc 1.13</p>
 </div><div class="pack"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png" alt="World Pre-Generation Banner" title="World Pre-Generation"></p>
 <h1 id="world-preloadingpre-generation">World Preloading/Pre-Generation</h1>
-<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip">latest version (v1.1)</a> (1.13+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip">(v1.0)</a> (1.13+)</p>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.2.zip">latest version (v1.2)</a> (1.13+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.1.zip">(v1.1)</a> (1.13+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/preload_world/preload_worldv1.0.zip">(v1.0)</a> (1.13+)</p>
 <h2 id="what-it-does">What it does</h2>
 <p>This datapack will allow you to easily pre-generate/preload your world, for when you want to play e.g. survival and don&#39;t want your server to be generating the world (aka lagging) while you&#39;re exploring for the first few thousand blocks. <strong>This is especially important in multiplayer.</strong></p>
 <p><strong>This datapack is intended to be run BEFORE you play in a world, but will still work after you&#39;ve played for a while as well.</strong></p>
@@ -146,7 +146,7 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <pre><code>/scoreboard players set &lt;settingName&gt; pl.settings &lt;value&gt;</code></pre><h3 id="displaying-the-settings">Displaying the settings</h3>
 <p>All settings are scoreboard scores, which can be shown by setting the scoreboard <code>pl.settings</code> to be viewed on the sidebar like this:  </p>
 <pre><code>/scoreboard objectives setdisplay sidebar pl.settings</code></pre><h3 id="setgamerules">setGamerules</h3>
-<p><em>Default: 1</em><br>If <code>setGamerules</code> is set to 1, it will set the gamerules <code>doDaylightCycle</code>, <code>doWeatherCycle</code> and <code>doMobSpawning</code> to false at the beginning and to true at the end of the generation. Set it to 0 to disable this functionality.  </p>
+<p><em>Default: 1</em><br>If <code>setGamerules</code> is set to 1, it will set the gamerules <code>doDaylightCycle</code>, <code>doWeatherCycle</code> and <code>doMobSpawning</code> to false at the beginning and to true at the end of the generation. Set it to 0 to disable this functionality.<br><em>Please note that the <code>spectatorsGenerateChunks</code> gamerule will always be set to true, no matter what these settings are.</em></p>
 <h3 id="renderdistance">renderDistance</h3>
 <p><em>Default: 8</em><br>You need to set <code>renderDistance</code> to your clients (singleplayer) or your servers (multiplayer) render distance, as that is important for the size of the steps the generation can make. You can also set it to a lower number than your actual render distance for a less resource intensive generation.</p>
 <h3 id="waittime">waitTime</h3>
@@ -170,6 +170,8 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <pre><code>/function preload:uninstall</code></pre><h3 id="contact">Contact</h3>
 <p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a> on my website.</p>
 <h3 id="changelog">Changelog</h3>
+<h4 id="12">1.2</h4>
+<p>09.05.2020 Used spectator mode and absolute heights for better useability. Also added an estimate for the time needed.</p>
 <h4 id="11">1.1</h4>
 <p>10.03.2020 Added X and Z Settings and their functionality</p>
 <h4 id="10">1.0</h4>
