@@ -3,7 +3,91 @@
 # Itemchallenge
 ### collect every item in the game
 
-[latest version (v2.0.0)](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v2.0.0.zip) (1.13)
+[latest version (v3.0)](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.0.zip) (1.16)  
+[v2.0](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v2.0.0.zip) (1.13)
+
+# 1.16 Version (3.0)
+
+_If you're using the old version, a lot has changed since then in terms of features. For that reason you can find the old instructions below_.
+
+## How to play
+
+The premise is easy: Find every item in the game and return it to the shrine.  
+The problem: There are **888** different items in the game obtainable in survival.  
+
+All you have to do is move up to the shrine (of your team) and place the items you want to register into the chest. **Be aware that that will consume the item** (if it hasn't been handed in before). Note that you need to stand close to the shrine to activate and actually check your items, or it won't work.  
+You can toggle a number in the actionbar that displays the total amount of found items of your team, by using `/trigger displayScore 1/0` in chat.  
+Your progress will also be tracked on the advancement screen. There you can see what items you have already collected and which ones are left.
+
+Around the shrine, once placed, is an "adventure mode" area, that will prevent you from building or breaking any blocks in close proximity to the shrine.  
+It will also protect itself against creeper explosions.
+
+## What's new
+
+In the 3.0 Version of this datapack, I've added **Teams**, **multiple shrines** and a possibility for **custom advancement layouts**.
+
+## How to set up
+
+### Shrine
+
+Download the zip file and place it into your `world/datapacks` folder. If the world is already running, run `reload`. That's all you need to do. Now you need to find a good place for the shrine(s) to be placed.
+if you think you've found that place, stand there and run
+
+    /function itemchallenge:spawn_shrine
+
+After placement you'll notice the adventure mode aura around the shrine. If you want/need to place blocks around the shrine, you have to switch to creative mode. The only things you must not change about the shrine is the chest, hopper and dropper.
+
+You can place as many shrines as you want. Just make sure they don't overlap, so keep a few blocks distance between them.
+
+#### Signs
+
+The signs in the shrines will automatically update, but only if they are placed in the positions they are already in. They show the teamid and current score. They also allow players to join that team. You can enable/disable this functionality by setting `signJoinEnabled` in `ic.settings` to either 0 or 1.
+
+    /scoreboard players set signJoinEnabled ic.settings 0
+
+Please note that the signs as well as the actionbar display have some delay in their updates, for performance reasons.
+
+You can break the signs and customize their rotation and type. Also line 3 is free for you to fill with whatever you want.
+
+### Teams
+
+Teams are represented by a number. A newly spawned shrine will be in team 0 by default.
+
+You can change a shrines team by standing at the shrine and running 
+
+    /scoreboard players set @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest] ic.team <teamNumber>
+
+replace `<teamNumber>` with the number of the team you want the shrine to join. By assigning a shrine to a new number, that team will be created automatically. You can change a shrines number at any time.
+
+**Please note**: 
+- Adding more teams will put exponentially more stress on the server with every team. So be conservative with the amount of teams you add. I've tested 4 and it worked fine, it depends on your server, just don't go crazy.
+- Always add the next number first (0, 1, 2, 3, ..), as the game assumes all previous teams also exist (so setting it to 420 will create 420 teams, which will cause lots of lag!)
+- Once a team has been created, you cannot remove it anymore.
+
+### Custom Layouts
+
+Since the full list of items in the advancement screen is hard to read, you can choose a different layout.
+
+There is currently **1** custom layout available for download:
+
+- [Alphabetical](custom_layouts/itemchallenge_alphabetical.zip)
+
+#### How to set up
+
+Download your desired layout, put it into the datapacks folder and make sure it is applied **on top** of the itemchallenge base pack.
+
+#### Make your own
+
+I have written a small script that allows you to create your own layouts fairly easily. [Download here](custom_layouts/generator.zip), unzip it into your datapacks folder and read the instructions inside the `itemchallenge_advancements_override/generator` folder. You need node.js to run this script.
+
+Of course you can also create your own layout from scratch, as long as you keep the file names I've established it will work no problem.
+
+This is somewhat advanced and is not recommended for beginners.
+
+If you came up with a cool pack that has an interesting grouping, please share it with me and if I like it, I'll put it up to download on this page here as well.  
+If you have questions or run into any issues with this, let me know (contact see below).
+
+# 1.13 Version (2.0)
 
 ## How to play
 
@@ -22,7 +106,7 @@ It will also protect itself against creeper explosions.
 Download the zip file and place it into your `world/datapacks` folder. If the world is already running, run `reload`. That's all you need to do. Now you need to find a good place for the shrine to be placed.
 if you think you've found that place, stand there and run
 
-    function itemchallenge:spawn_shrine
+    /function itemchallenge:spawn_shrine
 
 Make sure you have found the best spot, as having mutltiple shrines will break the pack.
 
