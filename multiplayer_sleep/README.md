@@ -2,7 +2,8 @@
 
 # Multiplayer Percentage Sleeping System
 
-[latest version (v2.1.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.1.0.zip) (1.14+)   
+[latest version (v2.2.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.2.0.zip) (1.16+)   
+[latest version (v2.1.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.1.0.zip) (1.14 - 1.15)   
 [1.13 version (v2.0.2)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip)  
 [1.12 version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv1.0.0.zip)  
 
@@ -40,6 +41,10 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+#### 2.2.0
+
+24.06.2020 Update to 1.16
 
 #### 2.1.0
 
