@@ -2,7 +2,8 @@
 
 # Homes
 
-[latest version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip) (1.14)
+[latest version (v1.2)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip) (1.16)
+[latest version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip) (1.14 - 1.15)
 
 ## Video
 
@@ -64,6 +65,7 @@ replace `x y z` with your new worldspawn coordinates.
 
 - Homes are running out ~3 years (real time) after you've created them. If this is a concern for you, reach out to me and I'll let you know how to extend it by another 3 years.  
 - Homes work up to 2^25 - 1 (33554431) blocks in both positive and negative x and z direction as well as 0-255 in y direction. This covers the whole possible minecraft world. Don't try to set a Home at the Farlands is what I'm trying to say.
+- Homes are only compatible with the three vanilla versions overworld, nether and end. Custom Dimensions are not supported.
 
 #### Uninstalling
 To remove all traces of the pack from your world you can run the `homes:uninstall` function before you deactivate the datapack (or delete it from your world folder). **This will remove all set homes for everyone** as well as remove all the scoreboard objectives it's using. If you just deactivate the pack and reactivate it again afterwards, all the homes will still be there.
@@ -74,6 +76,9 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+#### 1.2
+29.06.2020 Updated to 1.16
 
 #### 1.1.1
 13.10.2019 Removed the `replace:true` from the load and tick. No clue how they ended up in there.
