@@ -2,7 +2,7 @@
 
 A small datapack that turns your realm into hardcore mode, by putting everyone who dies into spectator mode.
 
-[latest version](https://github.com/Plagiatus/datapacks/raw/master/mobchallenge/hardcore_realm_v1.0.zip) (for mc 1.16.5)
+[latest version](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.0.zip) (for mc 1.16.5)
 
 ## How to set up
 
