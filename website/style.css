@@ -52,7 +52,7 @@ div.pack {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
 .pack-big.show {
@@ -61,7 +61,7 @@ div.pack {
 
 .pack-popup.show {
     display: grid;
-    place-items: center;
+    place-items: start center ;
 }
 
 .pack img, .pack-big img {
