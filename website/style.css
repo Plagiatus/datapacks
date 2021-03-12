@@ -1,12 +1,20 @@
 html {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    background-color: #181a1c;
-    color: #eceff3;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    background-color: #18191b;
+    color: #eee;
+}
+
+body {
     padding: 20px;
 }
 
 a {
     color: #cd2626;
+}
+
+div.pack-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div.pack {
@@ -17,14 +25,46 @@ div.pack {
     max-height: 150px;
     overflow: hidden;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-div.pack.enlarged {
+.pack-big {
     max-width: 720px;
+    width: 100%;
     max-height: none;
+    display: none;
+    position: relative;
+    background-color: #18191b;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    max-height: calc(100% - 20px);
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
-.pack img {
+.pack-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pack-big.show {
+    display: block;
+}
+
+.pack-popup.show {
+    display: grid;
+    place-items: center;
+}
+
+.pack img, .pack-big img {
     max-width: 100%;
 }
 a {
@@ -61,4 +101,28 @@ a {
     border-radius: 3px;
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: #111111;
+    max-width: 100%;
+}
+
+pre code {
+    max-width: 100%;
+    display: inline-block;
+    overflow-x: scroll;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    background-color: #18191b;
+    line-height: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 2rem;
+    height: 2rem;
 }
