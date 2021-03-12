@@ -41,7 +41,7 @@ div.pack {
     margin: 10px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
     max-height: calc(100% - 20px);
-    overflow-y: scroll;
+    overflow-y: auto;
     box-sizing: border-box;
 }
 
@@ -107,7 +107,7 @@ a {
 pre code {
     max-width: 100%;
     display: inline-block;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 #close-btn {
