@@ -10,9 +10,10 @@ let mobchallenge = marked(fs.readFileSync('../mobchallenge/README.md', 'utf-8'))
 let multiplayer_sleep = marked(fs.readFileSync('../multiplayer_sleep/README.md', 'utf-8'));
 let preload_world = marked(fs.readFileSync('../preload_world/README.md', 'utf-8'));
 let super_sponge = marked(fs.readFileSync('../super_sponge/README.md', 'utf-8'));
+let hardcore_realm = marked(fs.readFileSync('../hardcore_realm/README.md', 'utf-8'));
 let timer = marked(fs.readFileSync('../timer/README.md', 'utf-8'));
 
-let utility = [headdrops, homes, multiplayer_sleep, preload_world, super_sponge, timer];
+let utility = [headdrops, homes, multiplayer_sleep, preload_world, super_sponge, hardcore_realm, timer];
 let games = [itemchallenge, mobchallenge];
 
 let allUtility = "";
