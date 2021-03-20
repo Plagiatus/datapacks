@@ -33,6 +33,10 @@ let utility = [
         content: marked(fs.readFileSync('../timer/README.md', 'utf-8')),
         id: "timer"
     },
+    {
+        content: marked(fs.readFileSync('../bee_nest_info/README.md', 'utf-8')),
+        id: "bee_nest_info"
+    },
 ];
 
 let games = [

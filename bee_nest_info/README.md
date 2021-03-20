@@ -1,6 +1,6 @@
 ![Bee Info Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/bee_nest_info/banner.png "Bee Info")
 
-# Homes
+# Bee Nest Info
 
 [latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/bee_nest_info/bee_nest_info_v1.0.0.zip) (1.16+)
 
