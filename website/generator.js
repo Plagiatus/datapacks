@@ -48,6 +48,10 @@ let games = [
         content: marked(fs.readFileSync('../mobchallenge/README.md', 'utf-8')),
         id: "mobchallenge"
     },
+    {
+        content: marked(fs.readFileSync('../25deeds/README.md', 'utf-8')),
+        id: "twentyfivedeeds"
+    },
 ];
 
 let allUtility = "";
