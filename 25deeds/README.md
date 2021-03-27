@@ -2,7 +2,8 @@
 
 # 25 Deeds
 
-[latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/25deeds/25deeds_v1.0.zip) (1.16+)
+[latest version (v1.0.1)](https://github.com/Plagiatus/datapacks/raw/master/25deeds/25deeds_v1.0.zip) (1.16+)  
+[v1.0](https://github.com/Plagiatus/datapacks/raw/master/25deeds/25deeds_v1.0.zip) (1.16+)
 
 ## What it does
 
@@ -19,6 +20,10 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+
+#### 1.0.1
+fixed a small issue that cause the dragon head advancement to not trigger correctly
 
 #### 1.0
 23.03.2021 released
