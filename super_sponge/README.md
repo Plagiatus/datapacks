@@ -3,7 +3,7 @@
 # Super Sponge
 
 [latest version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.1.zip) (1.17+)   
-[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) (1.14-1.16)
+[1.14-1.16 version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) (1.14-1.16)
 
 ## Video
 

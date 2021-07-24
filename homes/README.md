@@ -3,7 +3,7 @@
 # Homes
 
 [latest version (v1.2)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip) (1.16)  
-[latest version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip) (1.14 - 1.15)
+[v1.1.1](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip) (1.14 - 1.15)
 
 ## Video
 
