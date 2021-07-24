@@ -2,11 +2,13 @@
 
 # Multiplayer Percentage Sleeping System
 
-[latest version (v2.2.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.2.0.zip) (1.16+)   
+[latest version (v2.2.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.2.0.zip) (1.16)   
 [latest version (v2.1.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.1.0.zip) (1.14 - 1.15)   
 [1.13 version (v2.0.2)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip)  
 [1.12 version (v1.0.0)](https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv1.0.0.zip)  
 
+## <span style="color:red">This datapack has been made obsolete by the 1.17 `playersSleepingPercentage` gamerule.</span>
+It is advised that you use that instead.
 
 ## What it does
 
