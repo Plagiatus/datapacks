@@ -5,7 +5,8 @@
 A small datapack that turns your realm into hardcore mode, by putting everyone who dies into spectator mode.  
 Has a mode for "super hardcore", aka one person dies, everyone gets set to spectator, starting version 1.1.
 
-[latest version (v1.2)](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.2.zip)  
+[latest version (v1.3), 1.18+](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.3.zip)  
+[v1.2 (1.16 - 1.17)](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.2.zip)  
 [v1.1](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.1.zip)  
 [v1.0](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.0.zip)
 
@@ -44,6 +45,17 @@ To change the world to super hardcore (aka if any player dies, everyone gets set
 To set it back to "normal" hardcore, change the `1` to a `0`.
 
 _Please note: once someone died while it was set to super hardcore, it doesn't automatically reset everyone else who didn't die if you set it back to normal!_
+
+### Super Hardcore light
+In **version 1.3** the "super hardcore light" mode was introduced, which gives the server as a whole a contingent of lives. To enable it, just set the amount of lives your server should have available through the same command as above.
+
+```
+/scoreboard players set #superHardcore deaths X
+```
+
+where `X` is the total amount of deaths you want to allow.  
+
+_Please note: In this mode individual deaths don't cause a change to spectator mode, so a player might die multiple times and take away multiple deaths from the amount of lives available._ 
 
 ## Contact
 
