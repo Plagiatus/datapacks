@@ -41,6 +41,14 @@ After placement you'll notice the adventure mode aura around the shrine. If you 
 
 You can place as many shrines as you want. Just make sure they don't overlap, so keep a few blocks distance between them.
 
+#### Removing a shrine
+
+To be able to fully remove a shrine you'll need to stand where the shrine is/was located and run
+
+    kill @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest]
+
+to remove the marker entity that marks the position of the shrine. You know it worked when the dropper stops clicking even when players are close. 
+
 #### Signs
 
 The signs in the shrines will automatically update, but only if they are placed in the positions they are already in. They show the teamid and current score. They also allow players to join that team. You can enable/disable this functionality by setting `signJoinEnabled` in `ic.settings` to either 0 or 1.
@@ -66,22 +74,22 @@ replace `<teamNumber>` with the number of the team you want the shrine to join. 
 - Always add the next number first (0, 1, 2, 3, ..), as the game assumes all previous teams also exist (so setting it to 420 will create 420 teams, which will cause lots of lag!)
 - Once a team has been created, you cannot remove it anymore.
 
-### Custom Layouts
+## Custom Layouts
 
-Since the full list of items in the advancement screen is hard (and laggy) to read, you can choose a different layout.
+Since the full list of items in the advancement screen is hard (and laggy) to read, it is highly recommended to use a custom layout instead.
 
 There is currently **1** custom layout available for download:
 
-#### Alphabetical
-- [1.16](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.16_alphabetical)
-- [1.17](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.17_alphabetical)
+### Alphabetical
 - [1.18](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.18_alphabetical)
+- [1.17](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.17_alphabetical)
+- [1.16](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.16_alphabetical)
 
-#### How to set up
+### How to set up
 
 Download your desired layout, put it into the datapacks folder and make sure it is applied **on top** of the itemchallenge base pack.
 
-#### Make your own
+### Make your own
 
 I have written a small script that allows you to create your own layouts fairly easily. [Download here](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/generator.zip), unzip it into your datapacks folder and read the instructions inside the `itemchallenge_advancements_override/generator` folder. You need node.js to run this script.
 

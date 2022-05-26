@@ -350,6 +350,9 @@ So if you want to skip the night if half of the players playing are in a bed, se
 if you think you&#39;ve found that place, stand there and run</p>
 <pre><code>/function itemchallenge:spawn_shrine</code></pre><p>After placement you&#39;ll notice the adventure mode aura around the shrine. If you want/need to place blocks around the shrine, you have to switch to creative mode. The only things you must not change about the shrine is the chest, hopper and dropper.</p>
 <p>You can place as many shrines as you want. Just make sure they don&#39;t overlap, so keep a few blocks distance between them.</p>
+<h4 id="removing-a-shrine">Removing a shrine</h4>
+<p>To be able to fully remove a shrine you&#39;ll need to stand where the shrine is/was located and run</p>
+<pre><code>kill @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest]</code></pre><p>to remove the marker entity that marks the position of the shrine. You know it worked when the dropper stops clicking even when players are close. </p>
 <h4 id="signs">Signs</h4>
 <p>The signs in the shrines will automatically update, but only if they are placed in the positions they are already in. They show the teamid and current score. They also allow players to join that team. You can enable/disable this functionality by setting <code>signJoinEnabled</code> in <code>ic.settings</code> to either 0 or 1.</p>
 <pre><code>/scoreboard players set signJoinEnabled ic.settings 0</code></pre><p>Please note that the signs as well as the actionbar display have some delay in their updates, for performance reasons.</p>
@@ -364,18 +367,18 @@ if you think you&#39;ve found that place, stand there and run</p>
 <li>Always add the next number first (0, 1, 2, 3, ..), as the game assumes all previous teams also exist (so setting it to 420 will create 420 teams, which will cause lots of lag!)</li>
 <li>Once a team has been created, you cannot remove it anymore.</li>
 </ul>
-<h3 id="custom-layouts">Custom Layouts</h3>
-<p>Since the full list of items in the advancement screen is hard (and laggy) to read, you can choose a different layout.</p>
+<h2 id="custom-layouts">Custom Layouts</h2>
+<p>Since the full list of items in the advancement screen is hard (and laggy) to read, it is highly recommended to use a custom layout instead.</p>
 <p>There is currently <strong>1</strong> custom layout available for download:</p>
-<h4 id="alphabetical">Alphabetical</h4>
+<h3 id="alphabetical">Alphabetical</h3>
 <ul>
-<li><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.16_alphabetical">1.16</a></li>
-<li><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.17_alphabetical">1.17</a></li>
 <li><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.18_alphabetical">1.18</a></li>
+<li><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.17_alphabetical">1.17</a></li>
+<li><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.16_alphabetical">1.16</a></li>
 </ul>
-<h4 id="how-to-set-up-1">How to set up</h4>
+<h3 id="how-to-set-up-1">How to set up</h3>
 <p>Download your desired layout, put it into the datapacks folder and make sure it is applied <strong>on top</strong> of the itemchallenge base pack.</p>
-<h4 id="make-your-own">Make your own</h4>
+<h3 id="make-your-own">Make your own</h3>
 <p>I have written a small script that allows you to create your own layouts fairly easily. <a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/generator.zip">Download here</a>, unzip it into your datapacks folder and read the instructions inside the <code>itemchallenge_advancements_override/generator</code> folder. You need node.js to run this script.</p>
 <p>Of course you can also create your own layout from scratch, as long as you keep the file names I&#39;ve established it will work no problem.</p>
 <p>This is somewhat advanced and is not recommended for beginners.</p>
