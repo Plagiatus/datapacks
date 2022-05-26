@@ -3,10 +3,12 @@
 # Itemchallenge
 ### collect every item in the game
 
-[latest version (v3.0)](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.0.zip) (1.16)  
+[v3.18](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.18.zip) (1.18.2)  
+[v3.17](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.17.zip) (1.17.1)  
+[v3.0](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.0.zip) (1.16)  
 [v2.0](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v2.0.0.zip) (1.13)
 
-# 1.16 Version (3.0)
+# 1.16+ Version (3.0)
 
 _If you're using the old version, a lot has changed since then in terms of features. For that reason you can find the old instructions below_.
 
@@ -66,11 +68,14 @@ replace `<teamNumber>` with the number of the team you want the shrine to join. 
 
 ### Custom Layouts
 
-Since the full list of items in the advancement screen is hard to read, you can choose a different layout.
+Since the full list of items in the advancement screen is hard (and laggy) to read, you can choose a different layout.
 
 There is currently **1** custom layout available for download:
 
-- [Alphabetical](custom_layouts/itemchallenge_alphabetical.zip)
+#### Alphabetical
+- [1.16](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.16_alphabetical)
+- [1.17](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.17_alphabetical)
+- [1.18](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.18_alphabetical)
 
 #### How to set up
 
@@ -78,7 +83,7 @@ Download your desired layout, put it into the datapacks folder and make sure it 
 
 #### Make your own
 
-I have written a small script that allows you to create your own layouts fairly easily. [Download here](custom_layouts/generator.zip), unzip it into your datapacks folder and read the instructions inside the `itemchallenge_advancements_override/generator` folder. You need node.js to run this script.
+I have written a small script that allows you to create your own layouts fairly easily. [Download here](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/generator.zip), unzip it into your datapacks folder and read the instructions inside the `itemchallenge_advancements_override/generator` folder. You need node.js to run this script.
 
 Of course you can also create your own layout from scratch, as long as you keep the file names I've established it will work no problem.
 
