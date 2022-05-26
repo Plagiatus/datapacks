@@ -243,7 +243,7 @@ So if you want to skip the night if half of the players playing are in a bed, se
 </div><div class="pack-big" id="hardcore_realm"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/hardcore_realm/banner.png" alt="Hardcore Realm Banner" title="Hardcore Realm"></p>
 <h1 id="hardcore-realm">Hardcore Realm</h1>
 <p>A small datapack that turns your realm into hardcore mode, by putting everyone who dies into spectator mode.<br>Has a mode for &quot;super hardcore&quot;, aka one person dies, everyone gets set to spectator, starting version 1.1.</p>
-<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.2.zip">latest version (v1.2)</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.1.zip">v1.1</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.0.zip">v1.0</a></p>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.3.zip">latest version (v1.3), 1.18+</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.2.zip">v1.2 (1.16 - 1.17)</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.1.zip">v1.1</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.0.zip">v1.0</a></p>
 <p><em>All versions have been created and tested with <strong>1.16</strong> only, but should all work in 1.13 or above. Please contact me if you run into any issues.</em></p>
 <h2 id="what-it-does">What it does</h2>
 <p>This datapack will turn your realm basically into a hardcore world, by putting anyone who died once into spectator mode. Or, if you configure it that way, it will even set everyone into spectator mode if even ONE player dies.</p>
@@ -263,6 +263,10 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>To change the world to super hardcore (aka if any player dies, everyone gets set to spectator mode), just run this simple command in the chat:</p>
 <pre><code>/scoreboard players set #superHardcore deaths 1</code></pre><p>To set it back to &quot;normal&quot; hardcore, change the <code>1</code> to a <code>0</code>.</p>
 <p><em>Please note: once someone died while it was set to super hardcore, it doesn&#39;t automatically reset everyone else who didn&#39;t die if you set it back to normal!</em></p>
+<h3 id="super-hardcore-light">Super Hardcore light</h3>
+<p>In <strong>version 1.3</strong> the &quot;super hardcore light&quot; mode was introduced, which gives the server as a whole a contingent of lives. To enable it, just set the amount of lives your server should have available through the same command as above.</p>
+<pre><code>/scoreboard players set #superHardcore deaths X</code></pre><p>where <code>X</code> is the total amount of deaths you want to allow.  </p>
+<p><em>Please note: In this mode individual deaths don&#39;t cause a change to spectator mode, so a player might die multiple times and take away multiple deaths from the amount of lives available.</em> </p>
 <h2 id="contact">Contact</h2>
 <p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
 </div><div class="pack-big" id="timer"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png" alt="Timer Banner" title="Timer System"></p>
