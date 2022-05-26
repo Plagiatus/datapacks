@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Brewing",
+        "description":"Brewing ingredients and results",
+        "background":"minecraft:textures\/gui\/advancements\/backgrounds\/stone.png",
+        "icon":"minecraft:potion",
+        "maxIconsPerRow": 30,
+        "values":[
+            "minecraft:ghast_tear",
+            "minecraft:potion",
+            "minecraft:glass_bottle",
+            "fermented_spider_eye",
+            "blaze_powder",
+            "magma_cream",
+            "brewing_stand",
+            "cauldron",
+            "glistering_melon_slice",
+            "golden_carrot",
+            "rabbit_foot",
+            "dragon_breath",
+            "splash_potion",
+            "lingering_potion"
+        ]
+    },
+    {
+        "name":"Transportation",
+        "description": "Transportation Stuff",
+        "background": "minecraft:textures\/gui\/advancements\/backgrounds\/stone.png",
+        "icon":"minecraft:rail",
+        "maxIconsPerRow": 30,
+        "values":[
+            "powered_rail",
+            "detector_rail",
+            "rail",
+            "activator_rail",
+            "minecart",
+            "saddle",
+            "oak_boat",
+            "elytra"
+        ]
+    }
+]
