@@ -3,6 +3,7 @@
 # Itemchallenge
 ### collect every item in the game
 
+[v3.19](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.18.zip) (1.19)  
 [v3.18](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.18.zip) (1.18.2)  
 [v3.17](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.17.zip) (1.17.1)  
 [v3.0](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/itemchallenge_v3.0.zip) (1.16)  
@@ -81,6 +82,7 @@ Since the full list of items in the advancement screen is hard (and laggy) to re
 There is currently **1** custom layout available for download:
 
 ### Alphabetical
+- [1.19](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.19_alphabetical)
 - [1.18](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.18_alphabetical)
 - [1.17](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.17_alphabetical)
 - [1.16](https://github.com/Plagiatus/datapacks/raw/master/itemchallenge/custom_layouts/itemchallenge_v3.16_alphabetical)
