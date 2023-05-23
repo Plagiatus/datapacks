@@ -37,6 +37,10 @@ let utility = [
         content: marked(fs.readFileSync('../bee_nest_info/README.md', 'utf-8')),
         id: "bee_nest_info"
     },
+    {
+        content: marked(fs.readFileSync('../elevators/README.md', 'utf-8')),
+        id: "elevators"
+    },
 ];
 
 let games = [

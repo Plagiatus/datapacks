@@ -41,7 +41,7 @@
     <p>Just click on the one that you're interested in and it will expand.</p>
     <h2>Utility</h2>
     <div class="pack-wrapper">
-        <div class="pack" id="headdrops"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/headdrops/banner.png" alt="Headdrops Banner" title="Headdrops"></div><div class="pack" id="homes"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/homes/banner.png" alt="Homes Banner" title="Homes"></div><div class="pack" id="multiplayer_sleep"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png" alt="Multiplayer Sleep Banner" title="Multiplayer Sleeping System"></div><div class="pack" id="preload_world"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png" alt="World Pre-Generation Banner" title="World Pre-Generation"></div><div class="pack" id="super_sponge"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/super_sponge/banner.png" alt="Super Sponge Banner" title="Super Sponge"></div><div class="pack" id="hardcore_realm"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/hardcore_realm/banner.png" alt="Hardcore Realm Banner" title="Hardcore Realm"></div><div class="pack" id="timer"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png" alt="Timer Banner" title="Timer System"></div><div class="pack" id="bee_nest_info"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/bee_nest_info/banner.png" alt="Bee Info Banner" title="Bee Info"></div>
+        <div class="pack" id="headdrops"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/headdrops/banner.png" alt="Headdrops Banner" title="Headdrops"></div><div class="pack" id="homes"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/homes/banner.png" alt="Homes Banner" title="Homes"></div><div class="pack" id="multiplayer_sleep"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png" alt="Multiplayer Sleep Banner" title="Multiplayer Sleeping System"></div><div class="pack" id="preload_world"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/preload_world/banner.png" alt="World Pre-Generation Banner" title="World Pre-Generation"></div><div class="pack" id="super_sponge"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/super_sponge/banner.png" alt="Super Sponge Banner" title="Super Sponge"></div><div class="pack" id="hardcore_realm"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/hardcore_realm/banner.png" alt="Hardcore Realm Banner" title="Hardcore Realm"></div><div class="pack" id="timer"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png" alt="Timer Banner" title="Timer System"></div><div class="pack" id="bee_nest_info"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/bee_nest_info/banner.png" alt="Bee Info Banner" title="Bee Info"></div><div class="pack" id="elevators"><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/elevators/banner.png" alt="Elevators Banner" title="Bee Info"></div>
     </div>
     <h2>Games</h2>
     <div class="pack-wrapper">
@@ -332,6 +332,39 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <h3 id="changelog">Changelog</h3>
 <h4 id="10">1.0</h4>
 <p>20.03.2021 released</p>
+</div><div class="pack-big" id="elevators"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/elevators/banner.png" alt="Elevators Banner" title="Bee Info"></p>
+<h1 id="elevators">Elevators</h1>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/elevators/elevators_v1.0.0.zip">latest version (v1.0)</a> (1.20+)</p>
+<h2 id="what-it-does">What it does</h2>
+<p>It basically adds the elevator blocks from the OpenBlocks mod to the vanilla game.</p>
+<p><em>Please note: Due to a limitation of how custom crafting can currently be done, the elevator block looks like a jigsaw block and is also called that until crafted.</em></p>
+<p>The elevator blocks can be crafted from 8 wool surrounding an ender pearl in a crafting bench.</p>
+<p>When placed on the same x/z coordinate and jumping / sneaking, they will teleport you up / down to the next elevator directly above / below. An elevator is only considered operational if the two blocks direcly above it are air.</p>
+<p><strong>By default, all elevators link to all elevators</strong>, but through the <em>settings</em> you can enable <strong>colors mode</strong>, which allows you to dye elevators and link only elevators with the same dye.</p>
+<p>Also in the settings you can set an xp cost to use an elevator.</p>
+<p>Thanks to new tech introduced in 1.20, you can even <strong>camouflage your elevator block by just rightclicking it with any block</strong>.  </p>
+<p>To <strong>remove</strong> an elevator, <strong>hit it with a pickaxe</strong>.</p>
+<h2 id="how-to-set-up">How to set up</h2>
+<p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do for it to start working.  </p>
+<p>However, have a look at the following settings to customize your experience.</p>
+<h2 id="settings">Settings</h2>
+<p>This datapack comes with some settings that you can adjust to customize your experience. All settings are changed by running this command in chat:</p>
+<pre><code>scoreboard players set &lt;setting&gt; elevator.settings &lt;value&gt;</code></pre><h3 id="range">range</h3>
+<p><em>Default: 384</em><br>Limits the maximum distance an elevator can teleport a player. By default it&#39;s the entire world height. <strong>Setting it to a value below 3 will render all elevators useless.</strong></p>
+<h3 id="samecolor">sameColor</h3>
+<p><em>Default: 0</em><br>If set to <code>1</code>, elevators will only teleport players to elevators with the same color. It is recommended to also enable <code>showColor</code> when turning this on. <strong>Rightclick an elevator with a dye to change its color.</strong></p>
+<h3 id="showcolor">showColor</h3>
+<p><em>Default: 0</em><br>If set to <code>1</code>, elevators will display the color they have been set to with a small particle. Also useful to see where elevators are.</p>
+<h3 id="requirexp">requireXP</h3>
+<p><em>Default: 0</em><br>A value &gt;0 required players to pay with this amount of experience points (not levels!) to use an elevator. If they have less XP than this value, they won&#39;t be able to use an elevator.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>In case some parts of the datapack don&#39;t work as expected anymore (crafting, placing, breaking, interacting), here is a simple steps you can take to try to resolve them:</p>
+<p>Because a lot of things are triggered through advancements, so running <code>advancement revoke Player from elevator:root</code> should reset those triggers for the &quot;Player&quot;. This should fix most issues.</p>
+<h3 id="contact">Contact</h3>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<h3 id="changelog">Changelog</h3>
+<h4 id="10">1.0</h4>
+<p>23.05.2023 released</p>
 </div><div class="pack-big" id="itemchallenge"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/itemchallenge/banner.png" alt="Itemchallenge Banner" title="Itemchallenge"></p>
 <h1 id="itemchallenge">Itemchallenge</h1>
 <h3 id="collect-every-item-in-the-game">collect every item in the game</h3>
