@@ -6,54 +6,54 @@ let index = fs.readFileSync('index.html').toString();
 
 let utility = [
     {
-        content: marked(fs.readFileSync('../headdrops/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../headdrops/README.md', 'utf-8')),
         id: "headdrops"
     },
     {
-        content: marked(fs.readFileSync('../homes/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../homes/README.md', 'utf-8')),
         id: "homes"
     },
     {
-        content: marked(fs.readFileSync('../multiplayer_sleep/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../multiplayer_sleep/README.md', 'utf-8')),
         id: "multiplayer_sleep"
     },
     {
-        content: marked(fs.readFileSync('../preload_world/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../preload_world/README.md', 'utf-8')),
         id: "preload_world"
     },
     {
-        content: marked(fs.readFileSync('../super_sponge/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../super_sponge/README.md', 'utf-8')),
         id: "super_sponge"
     },
     {
-        content: marked(fs.readFileSync('../hardcore_realm/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../hardcore_realm/README.md', 'utf-8')),
         id: "hardcore_realm"
     },
     {
-        content: marked(fs.readFileSync('../timer/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../timer/README.md', 'utf-8')),
         id: "timer"
     },
     {
-        content: marked(fs.readFileSync('../bee_nest_info/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../bee_nest_info/README.md', 'utf-8')),
         id: "bee_nest_info"
     },
     {
-        content: marked(fs.readFileSync('../elevators/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../elevators/README.md', 'utf-8')),
         id: "elevators"
     },
 ];
 
 let games = [
     {
-        content: marked(fs.readFileSync('../itemchallenge/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../itemchallenge/README.md', 'utf-8')),
         id: "itemchallenge"
     },
     {
-        content: marked(fs.readFileSync('../mobchallenge/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../mobchallenge/README.md', 'utf-8')),
         id: "mobchallenge"
     },
     {
-        content: marked(fs.readFileSync('../25deeds/README.md', 'utf-8')),
+        content: marked.parse(fs.readFileSync('../25deeds/README.md', 'utf-8')),
         id: "twentyfivedeeds"
     },
 ];

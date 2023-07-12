@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "marked": "^5.1.1"
+  }
+}
