@@ -62,7 +62,9 @@
 <h3 id="version-10-113">Version 1.0 (1.13):</h3>
 <p>After the datapack has been added to your world, it still needs some manual editing for it to work with your own skulls.
 Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add one of the following lines for each of your players, obviously replacing <code>Playername</code> with the actual name of the player:</p>
-<pre><code>execute at @a[scores={headDeath=1..},name=Playername] run summon item ~ ~ ~ {Item:{id:player_head,Count:1,tag:{SkullOwner:Playername}}}</code></pre><h3 id="additional-info">Additional Info</h3>
+<pre><code>execute at @a[scores={headDeath=1..},name=Playername] run summon item ~ ~ ~ {Item:{id:player_head,Count:1,tag:{SkullOwner:Playername}}}
+</code></pre>
+<h3 id="additional-info">Additional Info</h3>
 <p>Skulls that are dropped like this won&#39;t stack with the ones that have been placed and broken again, because the game converts the name of the SkullOwner into the texture.</p>
 <h2 id="contact">Contact</h2>
 <p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
@@ -70,14 +72,16 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 <h1 id="homes">Homes</h1>
 <p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip">latest version (v1.2)</a> (1.16)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip">v1.1.1</a> (1.14 - 1.15)</p>
 <h2 id="video">Video</h2>
-<p><a target='_blank' href="https://www.youtube.com/watch?v=Qz3sOGlcX4c&amp;">Video of this datapack in action</a></p>
+<p><a target='_blank' href="https://www.youtube.com/watch?v=Qz3sOGlcX4c&">Video of this datapack in action</a></p>
 <h2 id="what-it-does">What it does</h2>
 <p>Homes allow you to save positions in the world and teleport to them whenever you want, including different dimensions.</p>
 <p>This Datapack allows you to set unlimited homes in any world. The players of the world don&#39;t need OP to use the commands.</p>
 <h2 id="how-to-set-up">How to set up</h2>
 <p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.  </p>
 <p>You can look at the ingame-help for the datapack by running</p>
-<pre><code>/trigger home.help</code></pre><p>But while you&#39;re here you might as well read the long explanation below ↓</p>
+<pre><code>/trigger home.help
+</code></pre>
+<p>But while you&#39;re here you might as well read the long explanation below ↓</p>
 <h2 id="commands-explanations">Commands explanations</h2>
 <h3 id="general">General</h3>
 <ul>
@@ -97,7 +101,9 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 <h2 id="further-information">Further Information</h2>
 <ul>
 <li><p><strong>If you want to move your spawnchunks, you&#39;ll have to run this command afterwards to keep the datapack working:</strong></p>
-<pre><code>teleport @e[type=area_effect_cloud,tag=pla_home] x y z</code></pre></li>
+<pre><code>teleport @e[type=area_effect_cloud,tag=pla_home] x y z
+</code></pre>
+</li>
 </ul>
 <p>replace <code>x y z</code> with your new worldspawn coordinates.</p>
 <ul>
@@ -121,7 +127,7 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 </div><div class="pack-big" id="multiplayer_sleep"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/multiplayer_sleep/banner.png" alt="Multiplayer Sleep Banner" title="Multiplayer Sleeping System"></p>
 <h1 id="multiplayer-percentage-sleeping-system">Multiplayer Percentage Sleeping System</h1>
 <p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.2.0.zip">1.16 version (v2.2.0)</a> (1.16)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.1.0.zip">1.14/1.15 version (v2.1.0)</a> (1.14 - 1.15)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv2.0.2.zip">1.13 version (v2.0.2)</a><br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/multiplayer_sleep/multiplayer_sleepv1.0.0.zip">1.12 version (v1.0.0)</a>  </p>
-<h2 id="span-stylecolorredthis-datapack-has-been-made-obsolete-by-the-117-playerssleepingpercentage-gamerulespan"><span style="color:red">This datapack has been made obsolete by the 1.17 <code>playersSleepingPercentage</code> gamerule.</span></h2>
+<h2 id="this-datapack-has-been-made-obsolete-by-the-117-playerssleepingpercentage-gamerule"><span style="color:red">This datapack has been made obsolete by the 1.17 <code>playersSleepingPercentage</code> gamerule.</span></h2>
 <p>It is advised that you use that instead.</p>
 <h2 id="what-it-does">What it does</h2>
 <p>This Datapack is intended for larger survival servers. It allows the OPs of the server to set a percentage of players required to sleep to skip the night.
@@ -129,7 +135,9 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>When a player is trying to pass the night, a message in chat with how many players are left as well as an advancement will make other online players aware of this intent.</p>
 <h2 id="how-to-set-up">How to set up</h2>
 <p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.<br>That way it has been set to <strong>10% as a standard</strong>. To change that, use the following command in chat (replace XX with your desired percentage):</p>
-<pre><code>scoreboard players set requiredPercent multSleep.count XX</code></pre><p>This number can be changed at any time you want.</p>
+<pre><code>scoreboard players set requiredPercent multSleep.count XX
+</code></pre>
+<p>This number can be changed at any time you want.</p>
 <h2 id="further-information">Further Information</h2>
 <p>This datapack will...</p>
 <ul>
@@ -165,9 +173,13 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <h2 id="settings">Settings</h2>
 <p>The generation will use the player to load all the chunks, this is why it&#39;s important to set the settings correctly. Make sure you go through ALL the settings and make sure they are correct. All of these settings have a default value. If you&#39;re fine with those values, you can keep them that way.</p>
 <p>To change a setting, run this command in chat, replacing <code>&lt;settingName&gt;</code> with the name of the setting you want to change and <code>&lt;value&gt;</code> with the value this setting should have now.</p>
-<pre><code>/scoreboard players set &lt;settingName&gt; pl.settings &lt;value&gt;</code></pre><h3 id="displaying-the-settings">Displaying the settings</h3>
+<pre><code>/scoreboard players set &lt;settingName&gt; pl.settings &lt;value&gt;
+</code></pre>
+<h3 id="displaying-the-settings">Displaying the settings</h3>
 <p>All settings are scoreboard scores, which can be shown by setting the scoreboard <code>pl.settings</code> to be viewed on the sidebar like this:  </p>
-<pre><code>/scoreboard objectives setdisplay sidebar pl.settings</code></pre><h3 id="setgamerules">setGamerules</h3>
+<pre><code>/scoreboard objectives setdisplay sidebar pl.settings
+</code></pre>
+<h3 id="setgamerules">setGamerules</h3>
 <p><em>Default: 1</em><br>If <code>setGamerules</code> is set to 1, it will set the gamerules <code>doDaylightCycle</code>, <code>doWeatherCycle</code> and <code>doMobSpawning</code> to false at the beginning and to true at the end of the generation. Set it to 0 to disable this functionality.<br><em>Please note that the <code>spectatorsGenerateChunks</code> gamerule will always be set to true, no matter what these settings are.</em></p>
 <h3 id="renderdistance">renderDistance</h3>
 <p><em>Default: 8</em><br>You need to set <code>renderDistance</code> to your clients (singleplayer) or your servers (multiplayer) render distance, as that is important for the size of the steps the generation can make. You can also set it to a lower number than your actual render distance for a less resource intensive generation.</p>
@@ -182,14 +194,20 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p><em>Default: 1</em><br>You can set which dimension you want to pre-generate. For this, set each of <code>overworld</code>, <code>nether</code> and <code>end</code> to either 1 (pre-generate) or 0 (don&#39;t pre-generate). You cannot set different settings (generation size, wait time etc) for different dimensions, so if you want/need that, you&#39;ll have to run them one after the other.<br><em>This is the only setting that is changed to 0 after a run is completed to prevent accidental re-runs!</em></p>
 <h2 id="running-the-generation">Running the Generation</h2>
 <p>Once all the settings are set appropriately, run the following command as the player in the game:</p>
-<pre><code>/function preload:run</code></pre><p>After this, you will be teleported around a lot. Once the process has finished, you will be teleported to the worldspawn. The actionbar will inform you about the current progress.</p>
+<pre><code>/function preload:run
+</code></pre>
+<p>After this, you will be teleported around a lot. Once the process has finished, you will be teleported to the worldspawn. The actionbar will inform you about the current progress.</p>
 <p><strong>This process takes a while and only runs while the player is in the world!</strong></p>
 <h2 id="aborting-the-generation">Aborting the Generation</h2>
 <p>If for whatever reason you want to abort the generation, you can run the following command:</p>
-<pre><code>/function preload:run/done</code></pre><p><em>Please note that you will not be able to resume the generation once aborted and will have to restart!</em></p>
+<pre><code>/function preload:run/done
+</code></pre>
+<p><em>Please note that you will not be able to resume the generation once aborted and will have to restart!</em></p>
 <h2 id="uninstalling">Uninstalling</h2>
 <p>If you wish to uninstall/remove the pack, run the following function before you remove it, so you don&#39;t have any leftover data in your world that you don&#39;t need:</p>
-<pre><code>/function preload:uninstall</code></pre><h3 id="contact">Contact</h3>
+<pre><code>/function preload:uninstall
+</code></pre>
+<h3 id="contact">Contact</h3>
 <p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a> on my website.</p>
 <h3 id="changelog">Changelog</h3>
 <h4 id="12">1.2</h4>
@@ -200,7 +218,7 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>27.02.2020 Created Pack </p>
 </div><div class="pack-big" id="super_sponge"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/super_sponge/banner.png" alt="Super Sponge Banner" title="Super Sponge"></p>
 <h1 id="super-sponge">Super Sponge</h1>
-<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.1.zip">latest version (v1.1.1)</a> (1.17+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip">1.14-1.16 version (v1.1)</a> (1.14-1.16)</p>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.2.zip">latest version (v1.1.2)</a> (1.20+)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.1.zip">1.17-1.19 version (v1.1.1)</a> (1.17-1.19)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip">1.14-1.16 version (v1.1)</a> (1.14-1.16)</p>
 <h2 id="video">Video</h2>
 <p><a target='_blank' href="https://streamable.com/u9ux4">Video of this datapack in action</a></p>
 <h2 id="what-it-does">What it does</h2>
@@ -208,7 +226,9 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>Craftable by default by throwing 6 regular sponges and 3 nether stars onto the ground together. Can easily be adjusted to whatever fits your servers needs. (If you need help with that, <a target='_blank' href="http://plagiatus.net/#contact">feel free to reach out</a>).</p>
 <h2 id="how-to-set-up">How to set up</h2>
 <p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do.<br>That way it has been set to <strong>10 blocks range</strong>. To change that, use the following command in chat (replace XX with your desired range):</p>
-<pre><code>/scoreboard players set maximum fillsponge XX</code></pre><p>This number can be changed at any time you want.</p>
+<pre><code>/scoreboard players set maximum fillsponge XX
+</code></pre>
+<p>This number can be changed at any time you want.</p>
 <p><strong>Be aware that using this sponge especially with higher maximum numbers will lag the server!</strong></p>
 <h2 id="customisation">Customisation</h2>
 <p>You can easily customize which blocks you want the sponge to replace.<br>For this, open up the <code>replace.json</code> file located inside the pack at <code>SuperSponge_vXXX/data/fill_sponge/tags/blocks/replace.json</code> and change the <code>values</code> tag to be whatever you want to replace.</p>
@@ -261,14 +281,18 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p><strong>Realm</strong><br>Create the world on singleplayer and upload it to your realm after that.</p>
 <h2 id="how-to-change-to-super-hardcore">How to change to <strong>Super Hardcore</strong></h2>
 <p>To change the world to super hardcore (aka if any player dies, everyone gets set to spectator mode), just run this simple command in the chat:</p>
-<pre><code>/scoreboard players set #superHardcore deaths 1</code></pre><p>To set it back to &quot;normal&quot; hardcore, change the <code>1</code> to a <code>0</code>.</p>
+<pre><code>/scoreboard players set #superHardcore deaths 1
+</code></pre>
+<p>To set it back to &quot;normal&quot; hardcore, change the <code>1</code> to a <code>0</code>.</p>
 <p><em>Please note: once someone died while it was set to super hardcore, it doesn&#39;t automatically reset everyone else who didn&#39;t die if you set it back to normal!</em></p>
 <h3 id="super-hardcore-light">Super Hardcore light</h3>
 <p>In <strong>version 1.3</strong> the &quot;super hardcore light&quot; mode was introduced, which gives the server as a whole a contingent of lives. To enable it, just set the amount of lives your server should have available through the same command as above.</p>
-<pre><code>/scoreboard players set #superHardcore deaths X</code></pre><p>where <code>X</code> is the total amount of deaths you want to allow.  </p>
+<pre><code>/scoreboard players set #superHardcore deaths X
+</code></pre>
+<p>where <code>X</code> is the total amount of deaths you want to allow.  </p>
 <p><em>Please note: In this mode individual deaths don&#39;t cause a change to spectator mode, so a player might die multiple times and take away multiple deaths from the amount of lives available.</em> </p>
 <h2 id="contact">Contact</h2>
-<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:&#x63;&#111;&#x6e;&#x74;&#x61;&#x63;&#x74;&#x40;&#x70;&#108;&#x61;&#103;&#105;&#x61;&#116;&#117;&#x73;&#46;&#x6e;&#x65;&#x74;">&#x63;&#111;&#x6e;&#x74;&#x61;&#x63;&#x74;&#x40;&#x70;&#108;&#x61;&#103;&#105;&#x61;&#116;&#117;&#x73;&#46;&#x6e;&#x65;&#x74;</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
 </div><div class="pack-big" id="timer"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png" alt="Timer Banner" title="Timer System"></p>
 <h1 id="timer">Timer</h1>
 <p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/timer/timerv1.0.0.zip">latest version (v1.0.0)</a> (1.13)</p>
@@ -349,7 +373,9 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>However, have a look at the following settings to customize your experience.</p>
 <h2 id="settings">Settings</h2>
 <p>This datapack comes with some settings that you can adjust to customize your experience. All settings are changed by running this command in chat:</p>
-<pre><code>scoreboard players set &lt;setting&gt; elevator.settings &lt;value&gt;</code></pre><h3 id="range">range</h3>
+<pre><code>scoreboard players set &lt;setting&gt; elevator.settings &lt;value&gt;
+</code></pre>
+<h3 id="range">range</h3>
 <p><em>Default: 384</em><br>Limits the maximum distance an elevator can teleport a player. By default it&#39;s the entire world height. <strong>Setting it to a value below 3 will render all elevators useless.</strong></p>
 <h3 id="samecolor">sameColor</h3>
 <p><em>Default: 0</em><br>If set to <code>1</code>, elevators will only teleport players to elevators with the same color. It is recommended to also enable <code>showColor</code> when turning this on. <strong>Rightclick an elevator with a dye to change its color.</strong></p>
@@ -381,19 +407,27 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <h3 id="shrine">Shrine</h3>
 <p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do. Now you need to find a good place for the shrine(s) to be placed.
 if you think you&#39;ve found that place, stand there and run</p>
-<pre><code>/function itemchallenge:spawn_shrine</code></pre><p>After placement you&#39;ll notice the adventure mode aura around the shrine. If you want/need to place blocks around the shrine, you have to switch to creative mode. The only things you must not change about the shrine is the chest, hopper and dropper.</p>
+<pre><code>/function itemchallenge:spawn_shrine
+</code></pre>
+<p>After placement you&#39;ll notice the adventure mode aura around the shrine. If you want/need to place blocks around the shrine, you have to switch to creative mode. The only things you must not change about the shrine is the chest, hopper and dropper.</p>
 <p>You can place as many shrines as you want. Just make sure they don&#39;t overlap, so keep a few blocks distance between them.</p>
 <h4 id="removing-a-shrine">Removing a shrine</h4>
 <p>To be able to fully remove a shrine you&#39;ll need to stand where the shrine is/was located and run</p>
-<pre><code>kill @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest]</code></pre><p>to remove the marker entity that marks the position of the shrine. You know it worked when the dropper stops clicking even when players are close. </p>
+<pre><code>kill @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest]
+</code></pre>
+<p>to remove the marker entity that marks the position of the shrine. You know it worked when the dropper stops clicking even when players are close. </p>
 <h4 id="signs">Signs</h4>
 <p>The signs in the shrines will automatically update, but only if they are placed in the positions they are already in. They show the teamid and current score. They also allow players to join that team. You can enable/disable this functionality by setting <code>signJoinEnabled</code> in <code>ic.settings</code> to either 0 or 1.</p>
-<pre><code>/scoreboard players set signJoinEnabled ic.settings 0</code></pre><p>Please note that the signs as well as the actionbar display have some delay in their updates, for performance reasons.</p>
+<pre><code>/scoreboard players set signJoinEnabled ic.settings 0
+</code></pre>
+<p>Please note that the signs as well as the actionbar display have some delay in their updates, for performance reasons.</p>
 <p>You can break the signs and customize their rotation and type. Also line 3 is free for you to fill with whatever you want.</p>
 <h3 id="teams">Teams</h3>
 <p>Teams are represented by a number. A newly spawned shrine will be in team 0 by default.</p>
 <p>You can change a shrines team by standing at the shrine and running </p>
-<pre><code>/scoreboard players set @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest] ic.team &lt;teamNumber&gt;</code></pre><p>replace <code>&lt;teamNumber&gt;</code> with the number of the team you want the shrine to join. By assigning a shrine to a new number, that team will be created automatically. You can change a shrines number at any time.</p>
+<pre><code>/scoreboard players set @e[type=area_effect_cloud,tag=itemchallenge,limit=1,sort=nearest] ic.team &lt;teamNumber&gt;
+</code></pre>
+<p>replace <code>&lt;teamNumber&gt;</code> with the number of the team you want the shrine to join. By assigning a shrine to a new number, that team will be created automatically. You can change a shrines number at any time.</p>
 <p><strong>Please note</strong>: </p>
 <ul>
 <li>Adding more teams will put exponentially more stress on the server with every team. So be conservative with the amount of teams you add. I&#39;ve tested 4 and it worked fine, it depends on your server, just don&#39;t go crazy.</li>
@@ -425,7 +459,9 @@ if you think you&#39;ve found that place, stand there and run</p>
 <h2 id="how-to-set-up-2">How to set up</h2>
 <p>Download the zip file and place it into your <code>world/datapacks</code> folder. If the world is already running, run <code>reload</code>. That&#39;s all you need to do. Now you need to find a good place for the shrine to be placed.
 if you think you&#39;ve found that place, stand there and run</p>
-<pre><code>/function itemchallenge:spawn_shrine</code></pre><p>Make sure you have found the best spot, as having mutltiple shrines will break the pack.</p>
+<pre><code>/function itemchallenge:spawn_shrine
+</code></pre>
+<p>Make sure you have found the best spot, as having mutltiple shrines will break the pack.</p>
 <p>After placement you&#39;ll notice the adventure mode aura around the shrine. If you want/need to place blocks around the shrine, you have to switch to creative mode.</p>
 <h2 id="further-information">Further Information</h2>
 <p>Originally created for <em>Hardcore Hermits</em>, a series on the <a target='_blank' href="http://hermitcraft.com/">Hermitcraft</a> Server. Idea by <a target='_blank' href="http://xisumavoid.com/">Xisumavoid</a>.</p>
@@ -433,7 +469,9 @@ if you think you&#39;ve found that place, stand there and run</p>
 <p>It is possible to play this datapack in multiplayer, but the scores are counted for the whole world and not individually per player.</p>
 <h3 id="episodes">Episodes</h3>
 <p>That is why there is a &quot;episode&quot; mechanic built into this datapack. If you are a youtuber yourself and want timed 20 minute Episodes to play by, use </p>
-<pre><code>/trigger startEpisode</code></pre><p>to start the timer. When the episode is over, you will get a message in chat as well as a title on screen informing you that it is over.<br><em>Using this feature will stop the daylight circle once the episode is over and reenable it when a new episode is started!</em></p>
+<pre><code>/trigger startEpisode
+</code></pre>
+<p>to start the timer. When the episode is over, you will get a message in chat as well as a title on screen informing you that it is over.<br><em>Using this feature will stop the daylight circle once the episode is over and reenable it when a new episode is started!</em></p>
 <h3 id="problems-that-may-occur">Problems that may occur</h3>
 <p>The most common problem is that an item isn&#39;t detected eventhough it should be. That is most definitly because of one reason:<br>As soon as no player is in close proximity to the shrine anymore, the shrine stops detecting items (for lag reasons). So if you put in an item to get detected, just wait around the shrine for a few seconds,
 that way you can be sure it&#39;s detected correctly.</p>
