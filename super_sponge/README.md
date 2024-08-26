@@ -2,14 +2,14 @@
 
 # Super Sponge
 
-[latest version (v1.1.3)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.3.zip) (1.21)  
-[latest version (v1.1.2)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.2.zip) (1.20-1.20.4)  
-[1.17-1.19 version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.1.zip) (1.17-1.19)   
-[1.14-1.16 version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) (1.14-1.16)
+[MC 1.21 version (v1.1.3)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.3.zip)  
+[MC 1.20 - 1.20.4 version (v1.1.2)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.2.zip)   
+[MC 1.17 - 1.19 version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.1.zip)    
+[MC 1.14 - 1.16 version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) 
 
 ## Video
 
-[Video of this datapack in action](https://streamable.com/u9ux4)
+[Video of this datapack in action](https://streamable.com/u9ux4) (outdated, 1.21+ doesn't use floorcrafting anymore)
 
 ## What it does
 

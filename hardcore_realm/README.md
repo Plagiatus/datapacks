@@ -5,8 +5,9 @@
 A small datapack that turns your realm into hardcore mode, by putting everyone who dies into spectator mode.  
 Has a mode for "super hardcore", aka one person dies, everyone gets set to spectator, starting version 1.1.
 
-[latest version (v1.3), 1.18+](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.3.zip)  
-[v1.2 (1.16 - 1.17)](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.2.zip)  
+[MC 1.21 (v1.3.1)](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.3.1.zip)  
+[MC 1.18 - 1.20 (v1.3)](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.3.zip)  
+[MC 1.16 - 1.17 (v1.2)](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.2.zip)  
 [v1.1](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.1.zip)  
 [v1.0](https://github.com/Plagiatus/datapacks/raw/master/hardcore_realm/hardcore_realm_v1.0.zip)
 
