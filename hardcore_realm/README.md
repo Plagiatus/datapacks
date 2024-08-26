@@ -2,6 +2,9 @@
 
 # Hardcore Realm
 
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/hardcore-realm?style=for-the-badge&label=Modrinth%20Downloads&logo=modrinth&color=%231bd96a)](https://modrinth.com/datapack/hardcore-realm)
+
+
 A small datapack that turns your realm into hardcore mode, by putting everyone who dies into spectator mode.  
 Has a mode for "super hardcore", aka one person dies, everyone gets set to spectator, starting version 1.1.
 
