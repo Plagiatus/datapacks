@@ -15,6 +15,12 @@
 
 This datapack allows for the creation of super sponges that effectively remove all water in a large area.
 
+### Crafting
+
+_1.21 and above_  
+Using 6 sponges and 3 nether stars in a crafting bench will give you the sponge. It's using vanilla recipes now, so it's easily adjustable.
+
+_1.20.4 and below_  
 Craftable by default by throwing 6 regular sponges and 3 nether stars onto the ground together. Can easily be adjusted to whatever fits your servers needs. (If you need help with that, [feel free to reach out](http://plagiatus.net/#contact)).
 
 ## How to set up
@@ -47,6 +53,15 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+#### 1.1.5
+26.08.2024  
+
+- Updated to Minecraft 1.21
+- Added a proper recipe, thanks Mojang! No more floor crafting!
+- Switched from AECs to markers. Why didn't I do that earlier?
+
+
 
 #### 1.1
 08.07.2019 fixed a bug that would cause it to ignore bubble columns. Added multiple replace.json files.
