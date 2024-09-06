@@ -2,7 +2,10 @@
 
 # Bee Nest Info
 
+## OUTDATED AS OF 24w35a (1.21.2) - now included in the vanilla game
+
 [latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/bee_nest_info/bee_nest_info_v1.0.0.zip) (1.16+)
+
 
 ## What it does
 
