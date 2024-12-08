@@ -1,16 +1,20 @@
-![Elevators Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/elevators/banner.png "Bee Info")
+![Elevators Banner](https://raw.githubusercontent.com/Plagiatus/datapacks/master/elevators/banner.png "Elevators")
 
 # Elevators
 
-[latest version (v1.0)](https://github.com/Plagiatus/datapacks/raw/master/elevators/elevators_v1.0.0.zip) (1.20+)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/vanilla-elevators?style=for-the-badge&label=Modrinth%20Downloads&logo=modrinth&color=%231bd96a)](https://modrinth.com/datapack/vanilla-elevators)
+
+[latest version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/elevators/elevators_v1.1.zip) (1.21.4)  
+[v1.0](https://github.com/Plagiatus/datapacks/raw/master/elevators/elevators_v1.0.0.zip) (1.20)  
+
 
 ## What it does
 
 It basically adds the elevator blocks from the OpenBlocks mod to the vanilla game.
 
-_Please note: Due to a limitation of how custom crafting can currently be done, the elevator block looks like a jigsaw block and is also called that until crafted._
-
 The elevator blocks can be crafted from 8 wool surrounding an ender pearl in a crafting bench.
+
+![crafting](https://raw.githubusercontent.com/Plagiatus/datapacks/master/elevators/crafting.png)
 
 When placed on the same x/z coordinate and jumping / sneaking, they will teleport you up / down to the next elevator directly above / below. An elevator is only considered operational if the two blocks direcly above it are air.
 
@@ -21,6 +25,8 @@ Also in the settings you can set an xp cost to use an elevator.
 Thanks to new tech introduced in 1.20, you can even **camouflage your elevator block by just rightclicking it with any block**.  
 
 To **remove** an elevator, **hit it with a pickaxe**.
+
+To show some basic help in-game, use `/trigger elevator.help`.
 
 ## How to set up
 
@@ -66,5 +72,12 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 ### Changelog
 
+#### 1.1
+08.12.2024 
+- updated to 1.21.4
+- fixed jigsaw block appearance before crafting
+- added help trigger
+
 #### 1.0
-23.05.2023 released
+23.05.2023 released  
+_Please note: Due to a limitation of how custom crafting could be done at this time, the elevator block looks like a jigsaw block and is also called that until crafted._
