@@ -4,7 +4,8 @@
 
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/super-sponge?style=for-the-badge&label=Modrinth%20Downloads&logo=modrinth&color=%231bd96a)](https://modrinth.com/datapack/super-sponge)
 
-[MC 1.21 version (v1.1.3)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.3.zip)  
+[MC 1.21.2+ version (v1.1.4)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.4.zip)  
+[MC 1.21 - 1.21.1 version (v1.1.3)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.3.zip)  
 [MC 1.20 - 1.20.4 version (v1.1.2)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v1.1.2.zip)   
 [MC 1.17 - 1.19 version (v1.1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.1.zip)    
 [MC 1.14 - 1.16 version (v1.1)](https://github.com/Plagiatus/datapacks/raw/master/super_sponge/SuperSponge_v.1.1.zip) 
