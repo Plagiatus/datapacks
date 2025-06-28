@@ -2,7 +2,11 @@
 
 # Homes
 
-[latest version (v1.2)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip) (1.16)  
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/homes-datapack?style=for-the-badge&label=Modrinth%20Downloads&logo=modrinth&color=%231bd96a)](https://modrinth.com/datapack/homes-datapack)
+
+[latest version (v2.0)](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v2.0.zip) (1.21.5+)
+
+[v1.2](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip) (1.16)  
 [v1.1.1](https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip) (1.14 - 1.15)
 
 ## Video
@@ -24,6 +28,14 @@ You can look at the ingame-help for the datapack by running
     /trigger home.help
 
 But while you're here you might as well read the long explanation below ↓
+
+## Settings
+
+Starting in v2.0 there is a setting to limit the maximum amount of homes a player can create.
+
+`/scoreboard players set maxHomes home.settings XX`
+
+Replace `XX` with the maximum amount. Any value below 0 disables the maximum. Changing this setting later will not remove excess homes from players, just prevent them from creating new ones if they would be above the limit.
 
 ## Commands explanations
 
@@ -52,11 +64,19 @@ Deletes the specified home.
 `/trigger home.list`  
 Lists all your homes in a list with their ids, coordinates and names.
 
-`/trigger home.set_name (set #)`  
+`/trigger home.rename (set #)`  
+_(was `home.set_name` before 2.0)_  
 Sets the name of the specified home to the name of the item in your hand. **The item needs to be renamed in an anvil for it to work.** If it isn't or your hand is empty, it will not change the name.
 
 ## Further Information
 
+### 2.0 and above
+
+### Uninstalling
+
+You can use `/function homes:uninstall` to remove all the scoreboards from the game. This will however not remove the saved homes from the game. To remove those, run `/data remove storage homes:homes homes`.
+
+### Before 2.0
 - **If you want to move your spawnchunks, you'll have to run this command afterwards to keep the datapack working:**
 
       teleport @e[type=area_effect_cloud,tag=pla_home] x y z
@@ -76,6 +96,9 @@ If you have any questions, concerns, praise or found a bug, you can contact me d
 
 
 ### Changelog
+
+#### 2.0
+28.06.2025 Rewrote the entire thing for 1.21.5, now using storage instead of area effect clouds.
 
 #### 1.2
 29.06.2020 Updated to 1.16

@@ -70,7 +70,9 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 <p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
 </div><div class="pack-big" id="homes"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/homes/banner.png" alt="Homes Banner" title="Homes"></p>
 <h1 id="homes">Homes</h1>
-<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip">latest version (v1.2)</a> (1.16)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip">v1.1.1</a> (1.14 - 1.15)</p>
+<p><a target='_blank' href="https://modrinth.com/datapack/homes-datapack"><img src="https://img.shields.io/modrinth/dt/homes-datapack?style=for-the-badge&label=Modrinth%20Downloads&logo=modrinth&color=%231bd96a" alt="Modrinth Downloads"></a></p>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v2.0.zip">latest version (v2.0)</a> (1.21.5+)</p>
+<p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.2.zip">v1.2</a> (1.16)<br><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/homes/homes_v1.1.1.zip">v1.1.1</a> (1.14 - 1.15)</p>
 <h2 id="video">Video</h2>
 <p><a target='_blank' href="https://www.youtube.com/watch?v=Qz3sOGlcX4c&">Video of this datapack in action</a></p>
 <h2 id="what-it-does">What it does</h2>
@@ -82,6 +84,10 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 <pre><code>/trigger home.help
 </code></pre>
 <p>But while you&#39;re here you might as well read the long explanation below ↓</p>
+<h2 id="settings">Settings</h2>
+<p>Starting in v2.0 there is a setting to limit the maximum amount of homes a player can create.</p>
+<p><code>/scoreboard players set maxHomes home.settings XX</code></p>
+<p>Replace <code>XX</code> with the maximum amount. Any value below 0 disables the maximum. Changing this setting later will not remove excess homes from players, just prevent them from creating new ones if they would be above the limit.</p>
 <h2 id="commands-explanations">Commands explanations</h2>
 <h3 id="general">General</h3>
 <ul>
@@ -97,8 +103,12 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 <p><code>/trigger home.set (set #)</code><br>Set a new home location. This command will also override a home if set to an existing number.</p>
 <p><code>/trigger home.delete (set #)</code><br>Deletes the specified home.  </p>
 <p><code>/trigger home.list</code><br>Lists all your homes in a list with their ids, coordinates and names.</p>
-<p><code>/trigger home.set_name (set #)</code><br>Sets the name of the specified home to the name of the item in your hand. <strong>The item needs to be renamed in an anvil for it to work.</strong> If it isn&#39;t or your hand is empty, it will not change the name.</p>
+<p><code>/trigger home.rename (set #)</code><br><em>(was <code>home.set_name</code> before 2.0)</em><br>Sets the name of the specified home to the name of the item in your hand. <strong>The item needs to be renamed in an anvil for it to work.</strong> If it isn&#39;t or your hand is empty, it will not change the name.</p>
 <h2 id="further-information">Further Information</h2>
+<h3 id="20-and-above">2.0 and above</h3>
+<h3 id="uninstalling">Uninstalling</h3>
+<p>You can use <code>/function homes:uninstall</code> to remove all the scoreboards from the game. This will however not remove the saved homes from the game. To remove those, run <code>/data remove storage homes:homes homes</code>.</p>
+<h3 id="before-20">Before 2.0</h3>
 <ul>
 <li><p><strong>If you want to move your spawnchunks, you&#39;ll have to run this command afterwards to keep the datapack working:</strong></p>
 <pre><code>teleport @e[type=area_effect_cloud,tag=pla_home] x y z
@@ -111,11 +121,13 @@ Open up the file <code>data/headdrop/functions/drop.mcfunction</code> and add on
 <li>Homes work up to 2^25 - 1 (33554431) blocks in both positive and negative x and z direction as well as 0-255 in y direction. This covers the whole possible minecraft world. Don&#39;t try to set a Home at the Farlands is what I&#39;m trying to say.</li>
 <li>Homes are only compatible with the three vanilla versions overworld, nether and end. Custom Dimensions are not supported.</li>
 </ul>
-<h4 id="uninstalling">Uninstalling</h4>
+<h4 id="uninstalling-1">Uninstalling</h4>
 <p>To remove all traces of the pack from your world you can run the <code>homes:uninstall</code> function before you deactivate the datapack (or delete it from your world folder). <strong>This will remove all set homes for everyone</strong> as well as remove all the scoreboard objectives it&#39;s using. If you just deactivate the pack and reactivate it again afterwards, all the homes will still be there.</p>
 <h3 id="contact">Contact</h3>
 <p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:contact@plagiatus.net">contact@plagiatus.net</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
 <h3 id="changelog">Changelog</h3>
+<h4 id="20">2.0</h4>
+<p>28.06.2025 Rewrote the entire thing for 1.21.5, now using storage instead of area effect clouds.</p>
 <h4 id="12">1.2</h4>
 <p>29.06.2020 Updated to 1.16</p>
 <h4 id="111">1.1.1</h4>
@@ -303,7 +315,7 @@ So if you want to skip the night if half of the players playing are in a bed, se
 <p>where <code>X</code> is the total amount of deaths you want to allow.  </p>
 <p><em>Please note: In this mode individual deaths don&#39;t cause a change to spectator mode, so a player might die multiple times and take away multiple deaths from the amount of lives available.</em> </p>
 <h2 id="contact">Contact</h2>
-<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:&#x63;&#111;&#110;&#x74;&#x61;&#x63;&#x74;&#x40;&#x70;&#x6c;&#x61;&#x67;&#x69;&#97;&#x74;&#x75;&#x73;&#46;&#110;&#x65;&#x74;">&#x63;&#111;&#110;&#x74;&#x61;&#x63;&#x74;&#x40;&#x70;&#x6c;&#x61;&#x67;&#x69;&#97;&#x74;&#x75;&#x73;&#46;&#110;&#x65;&#x74;</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
+<p>If you have any questions, concerns, praise or found a bug, you can contact me directly at <a target='_blank' href="mailto:&#x63;&#111;&#110;&#x74;&#97;&#x63;&#x74;&#x40;&#x70;&#x6c;&#97;&#x67;&#x69;&#x61;&#x74;&#117;&#115;&#46;&#x6e;&#x65;&#116;">&#x63;&#111;&#110;&#x74;&#97;&#x63;&#x74;&#x40;&#x70;&#x6c;&#97;&#x67;&#x69;&#x61;&#x74;&#117;&#115;&#46;&#x6e;&#x65;&#116;</a> or use my <a target='_blank' href="http://plagiatus.net/#contact">contact form</a>.</p>
 </div><div class="pack-big" id="timer"><p><img src="https://raw.githubusercontent.com/Plagiatus/datapacks/master/timer/banner.png" alt="Timer Banner" title="Timer System"></p>
 <h1 id="timer">Timer</h1>
 <p><a target='_blank' href="https://github.com/Plagiatus/datapacks/raw/master/timer/timerv1.0.0.zip">latest version (v1.0.0)</a> (1.13)</p>
