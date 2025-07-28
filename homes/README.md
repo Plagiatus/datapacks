@@ -72,7 +72,7 @@ Sets the name of the specified home to the name of the item in your hand. **The 
 
 ### 2.0 and above
 
-### Uninstalling
+#### Uninstalling
 
 You can use `/function homes:uninstall` to remove all the scoreboards from the game. This will however not remove the saved homes from the game. To remove those, run `/data remove storage homes:homes homes`.
 
